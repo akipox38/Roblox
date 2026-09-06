@@ -35,15 +35,21 @@ local GuardAreas = workspace:QueryDescendants("#__OBJECTS > #Areas > #GuardAreas
 local SpawnedEggs = workspace:FindFirstChild("AreaEggSlotsClient")
 local PlacedEggs = nil
 
-local Interfaces = {}
-
-Interfaces.PetScroll = PlayerGui:QueryDescendants("#ActivePets > #Frame > #ScrollingFrame")[1]
+local Interfaces = {
+	["PetScroll"] = PlayerGui:QueryDescendants("#ActivePets > #Frame > #ScrollingFrame")[1],
+	["TrailScroll"] = PlayerGui:QueryDescendants("#TrailShop > #Frame > #ScrollingFrame")[1],
+}
 
 for i, v in ipairs(workspace:GetChildren()) do
 	if v.Name == "PlacedEggRenders" and #v:GetChildren() >= 1 then
 		PlacedEggs = v
 	end
 end
+
+local UpgradeTypes = {"Treadmill","Buy Trail"}
+local UpgradeActives = {["AllEnabled"]=true}
+
+local UpgradeTreadmillButton = nil
 
 local AreasList = {
 	"Automatic"
@@ -118,7 +124,7 @@ local function GetBestArea()
 	return bestName or "Lake"
 end
 
-local function walkTo(hum, pos)
+local function WalkTo(hum, pos)
 	local hrp = hum.RootPart
 	while true do
 		hum:MoveTo(pos)
@@ -139,27 +145,34 @@ local function walkTo(hum, pos)
 	end
 end
 
-local function GetBestPosition(height)
-	local closestPosition = nil
-	local closestDist = nil
-	
-	for _, model in ipairs(GuardAreas:GetChildren()) do
-		if model and model.Parent then
-			local surfacePart = model:FindFirstChild("Bounds")
-			if surfacePart then
-				if not Character and Character.Parent then return nil end
-				local rootPart = Character.PrimaryPart or Character:FindFirstChild("HumanoidRootPart")
-				if not rootPart then return nil end
-				local dist = (surfacePart.Position - rootPart.Position).Magnitude
-				if not closestDist or dist < closestDist then
-					closestDist = dist
-					closestPosition = surfacePart.Position
-				end
-			end
+local TrailInfos = {}
+
+if Interfaces.TrailScroll then
+	local sortTrails={}
+
+	for _,layer in ipairs(Interfaces.TrailScroll:GetChildren()) do
+		if layer and layer.Parent and layer:IsA("GuiObject") then
+			local button=layer:QueryDescendants("#LockedControls > #BuyCash")[1]
+			if not button then continue end
+
+			local title=layer:QueryDescendants("#LockedControls > #BuyCash > #Price")[1]
+			if not title then continue end
+
+			table.insert(sortTrails, {
+				["Button"]=button,
+				["Title"]=title,
+				["Tier"]=layer.LayoutOrder
+			})
 		end
 	end
 
-	return closestPosition or Waypoints.SafeArea
+	table.sort(sortTrails, function(a, b)
+		return a.Tier<b.Tier
+	end)
+
+	for _,info in ipairs(sortTrails) do
+		table.insert(TrailInfos,info)
+	end
 end
 
 local Window = UI:CreateWindow({
@@ -191,11 +204,11 @@ Window:AddToggle({
 
 					if not (Character and Character.Parent) then continue end
 
-					local Humanoid = Character:FindFirstChildOfClass("Humanoid")
-					if not Humanoid then continue end
-					
-					Values.LastHumanoid = Humanoid
-					Values.SaveHipHeight = Humanoid.HipHeight
+					local humanoid = Character:FindFirstChildOfClass("Humanoid")
+					if not humanoid then continue end
+
+					Values.LastHumanoid = humanoid
+					Values.SaveHipHeight = humanoid.HipHeight
 
 					Connections.Noclipping = RunService.Stepped:Connect(function()
 						if Enableds.Farm then
@@ -209,15 +222,39 @@ Window:AddToggle({
 					end)
 
 					if Enableds.Collect and Packets.Steal then
-						local bestArea = GuardAreas[GetBestArea()]
-
-						Humanoid.HipHeight = 20
 						task.wait(0.1)
-						walkTo(Humanoid, GetBestPosition())
-						Humanoid.HipHeight = 2
+						WalkTo(humanoid, Waypoints.SafeArea)
 						task.wait(0.1)
-						walkTo(Humanoid, bestArea.Bounds.Position)
+						local selectBestArea = GetBestArea()
+						local bestArea = GuardAreas[selectBestArea]
+						local bestBounds = nil
+						local alreadyAreas = {}
+						local bestBounds = bestArea:FindFirstChild("Bounds")
 
+						if not bestBounds then
+							repeat 
+								for index=2,#AreasList do
+									if not Enableds.Collect then break end
+									bestBounds = bestArea:FindFirstChild("EggZone")
+									if bestBounds then break end
+									local selectArea = AreasList[index]
+									if alreadyAreas[selectArea] then continue end
+									local area = GuardAreas:FindFirstChild(selectArea)
+									local bounds = area:FindFirstChild("EggZone")
+									if bounds then
+										local reached = WalkTo(humanoid, bounds.Position)
+										if reached then
+											alreadyAreas[selectArea] = true 
+										end
+									end
+									task.wait()
+								end
+
+								task.wait(1)
+							until bestBounds ~= nil or not Enableds.Collect
+							if not Enableds.Collect then break end
+						end
+						WalkTo(humanoid, bestBounds.Position)
 						local closestEgg, closestDist = nil, nil
 						for _, v in ipairs(SpawnedEggs:GetChildren()) do
 							if v and v.Parent then
@@ -238,25 +275,25 @@ Window:AddToggle({
 						end
 
 						if closestEgg then
-							walkTo(Humanoid, closestEgg.PrimaryPart.Position)
+							WalkTo(humanoid, closestEgg.PrimaryPart.Position)
 
 							task.wait(0.5)
 
-							walkTo(Humanoid, closestEgg.PrimaryPart.Position)
+							WalkTo(humanoid, closestEgg.PrimaryPart.Position)
 							task.wait()
 
 							Packets.Steal:InvokeServer({Uid = closestEgg.Name})
 						end
-						walkTo(Humanoid, Waypoints.SafeArea)
+						WalkTo(humanoid, Waypoints.SafeArea)
 					end
 
 					task.wait(0.5)
 
 					if Enableds.Place and Packets.Place then
 						if LastInventory ~= nil then
-							Humanoid.HipHeight = 20
+							--humanoid.HipHeight = 20
 							task.wait(0.1)
-							walkTo(Humanoid, Plot.CenterPoint.Position)
+							WalkTo(humanoid, Plot.CenterPoint.Position)
 
 							for i, v in pairs(LastInventory) do
 								local randomArea = CFrame.new(math.random(-23, 23), -0.5001220703125, math.random(-29, 29), 0, 0, 1, 0, 1, 0, -1, 0, 0)
@@ -280,7 +317,7 @@ Window:AddToggle({
 							if splitString[1] == tostring(LocalPlayer.UserId) then
 								--Humanoid.HipHeight = 20
 								task.wait(0.1)
-								walkTo(Humanoid, v.PrimaryPart.Position)
+								WalkTo(humanoid, v.PrimaryPart.Position)
 
 								local res = Packets.Hatch:InvokeServer(
 									splitString[2]
@@ -308,8 +345,8 @@ Window:AddToggle({
 
 					Values.NoclipParts = {}
 
-					if Humanoid and Humanoid.Parent and Values.SaveHipHeight then
-						Humanoid.HipHeight = Values.SaveHipHeight
+					if humanoid and humanoid.Parent and Values.SaveHipHeight then
+						humanoid.HipHeight = Values.SaveHipHeight
 						Values.SaveHipHeight = nil
 						Values.LastHumanoid = nil
 					end
@@ -321,7 +358,7 @@ Window:AddToggle({
 				Connections.Noclipping:Disconnect()
 				Connections.Noclipping = nil
 			end
-			
+
 			if Values.LastHumanoid and Values.LastHumanoid.Parent and Values.SaveHipHeight then
 				Values.LastHumanoid.HipHeight = Values.SaveHipHeight
 				Values.SaveHipHeight = nil
@@ -493,81 +530,62 @@ Interfaces.EquipToggle = Window:AddToggle({
 	end
 })
 
-Interfaces.UpgradeToggle = Window:AddToggle({
-	Name = "Upgrade Treadmill",
-	Default = false,
-	Callback = function(v)
-		Enableds.Upgrade = v
-		if v then
-			Interfaces.ThreadmillButton = Interfaces.ThreadmillButton or Plot:QueryDescendants("#Sign > #SurfaceGui > #Frame > #Upgrade")[1]
-			Interfaces.ThreadmillHint = Interfaces.ThreadmillHint or Plot:QueryDescendants("#Sign > #CanUpgrade")[1]
+Window:AddDropdown({
+	Text="Upgrade Type",
+	Options=#UpgradeTypes>0 and UpgradeTypes or {"No Upgrade Type"},
+	Option=nil,
+	Multi=true,
+	Callback=function(option)
+		for _,key in ipairs(UpgradeTypes) do
+			UpgradeActives[key]=table.find(option,key)~=nil
+		end
+		UpgradeActives.AllEnabled=#option<=0
+	end
+})
 
-			if not (Interfaces.ThreadmillHint and Interfaces.ThreadmillButton) then 
-				Enableds.Upgrade = false
-				Interfaces.UpgradeToggle:Replace(false)
-				return
-			end
+Window:AddToggle({
+	Text="Auto Upgrade",
+	Value=false,
+	Callback=function(value)
+		Enableds.Upgrade=value
+		if not Enableds.Upgrade then return end
+		task.spawn(function()
+			while Enableds.Upgrade do
+				Interfaces.ThreadmillButton = Interfaces.ThreadmillButton or Plot:QueryDescendants("#Sign > #SurfaceGui > #Frame > #Upgrade")[1]
+				Interfaces.ThreadmillHint = Interfaces.ThreadmillHint or Plot:QueryDescendants("#Sign > #CanUpgrade")[1]
 
-			task.spawn(function()
-				while Enableds.Upgrade do
+				if not (Interfaces.ThreadmillHint and Interfaces.ThreadmillButton) then 
+					Enableds.Upgrade = false
+					Interfaces.UpgradeToggle:Replace(false)
+					return
+				end
+				
+				if Interfaces.ThreadmillHint and Interfaces.ThreadmillButton then
 					if Interfaces.ThreadmillHint.Enabled then
 						FireButton(Interfaces.ThreadmillButton)
 					end
-					task.wait()
 				end
-			end)
-		end
-	end
-})
-
-Interfaces.BuyTrail = Window:AddToggle({
-	Name = "Buy Trail",
-	Default = false,
-	Callback = function(v)
-		Enableds.BuyTrail = v
-		if v then
-			Enableds.BuyTrail = false
-			Interfaces.BuyTrail:Replace(false)
-		end
-	end
-})
-
-Interfaces.SellToggle = Window:AddToggle({
-	Name = "Auto Sell",
-	Default = false,
-	Callback = function(v)
-		Enableds.Sell = v
-		if v then
-			if not Packets.SellAll then
-				local ok, result = pcall(function()
-					return ReplicatedStorage.Packages.Networking["RE/PetSatchel/SellEveryPet"]
-				end)
-				if ok and result then Packets.SellAll = result end
+				task.wait(1)
 			end
-	
-			if not Packets.SellAll then 
-				Enableds.Sell = false
-				Interfaces.SellToggle:Replace(false)
-				return
-			end
+		end)
+		task.spawn(function()
+			while Enableds.Upgrade do
+				if UpgradeActives["Buy Trail"] == true then
+					for _, info in ipairs(TrailInfos) do
+						if not (UpgradeActives["Buy Trail"] and Enableds.Upgrade) then break end
+						local key = info.Title.Text:lower()
+						if key:find("equip") or key:find("unequip") then continue end
+						if key:find("$") then
+							FireButton(info.Button)
+						end					
+						task.wait()
 
-			task.spawn(function()
-				while Enableds.Sell do
-					Values.SellList = {}
-					for _, tool in ipairs(Backpack:GetChildren()) do
-						if tool and tool.Parent then
-							local uid = tool:GetAttribute("UID")
-							if uid ~= nil then
-								table.insert(Values.SellList, uid)
-							end
-						end
 					end
-					Packets.SellAll:FireServer(Values.SellList)
-					task.wait(3)
-					Values.SellList={}
 				end
-			end)
-		end
+				task.wait(1)
+			end
+		end)
+
 	end
 })
 
