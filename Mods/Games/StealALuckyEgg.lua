@@ -1,1 +1,491 @@
-return(function(...)local o={"\101\050\117\066\067\111\057\076\057\043\061\061","\119\113\109\061";"\071\098\076\066\049\115\061\061";"\057\077\110\090\119\077\086\061";"\083\111\048\109\068\106\106\107\116\086\055\081\086\055\106\073\068\077\086\061";"\049\100\053\085\083\111\116\113\071\065\076\065\071\100\067\061";"\057\077\084\080\057\050\048\053\119\100\067\061";"\071\120\084\122\071\120\110\066";"\081\080\115\061";"";"\122\099\112\067\104\097\079\056\077\047\118\043\117\082\113\106\071\070\055\117\121\115\087\089\119\048\057\074\052\071\097\065\083\118\067\083\055\068\121\074\071\115\081\116\057\090\112\120\097\087\069\057\088\100\077\105\072\115\117\116\078\105\099\083\104\118\071\055\114\080\107\115\071\090\097\052\089\100\074\043\098\068\101\086\108\084\074\085\052\053\101\053\101\079\047\107","\119\077\106\122","\049\065\048\069\119\082\109\061";"\067\100\110\122\049\077\084\107";"\057\114\056\097\071\114\116\118","\067\082\117\069\068\114\056\098","\086\066\053\055\067\065\106\107\104\114\056\048\117\055\116\104";"\065\055\084\107\049\065\117\074\057\077\110\090\119\077\086\061";"\049\120\055\074\057\077\116\075","\083\072\116\089\104\077\074\100\068\050\073\103\071\112\076\111";"\071\120\084\090\067\112\106\080\114\112\110\108\119\055\117\048\072\065\086\061","\065\055\084\098\071\097\061\061";"\067\100\106\107\119\082\049\076";"\117\072\110\047\101\077\117\089\106\066\047\061";"\068\120\066\056\106\055\076\085\104\110\049\068\114\112\048\079";"\101\087\117\077\106\106\057\101\114\106\048\075\108\076\110\055\117\106\067\061";"\119\114\110\066\068\043\061\061";"\114\098\106\109\067\055\115\055\057\111\074\081\108\114\070\052\071\070\061\061";"\067\077\116\074\119\077\097\061";"\106\077\110\107\067\077\106\069\109\111\117\076\057\077\106\087\057\077\106\112\109\115\061\061","\119\077\084\074\049\050\116\066\067\100\076\122\049\097\061\061","\057\077\084\122\057\114\055\090\049\065\109\061";"\106\112\116\115\071\115\061\061";"\052\076\070\101\107\043\061\061","\104\090\070\076\049\054\075\053\104\070\061\061";"\104\070\061\061";"\119\100\056\114\119\080\048\049\108\066\057\069\119\106\110\079\104\077\079\061";"\049\082\116\055\071\070\061\061";"\067\100\106\120\049\114\056\065\116\114\110\056\083\110\076\118";"\067\120\106\066\119\114\106\066\071\065\117\074\071\100\052\076","\106\065\048\086\071\086\074\079\119\055\108\080\108\112\052\048\049\114\115\061","\071\120\074\074\067\070\061\061";"\065\055\084\053\119\100\117\076\083\043\061\061","\057\076\110\117\114\072\071\056\083\050\057\076\114\050\049\097\067\055\067\061","\120\085\097\051\115\073\053\088\111\078\104\088\105\081\075\055\065\087\085\082\074\047\112\061";"\084\115\105\081\075\078\057\098\070\103\071\113\101\057\105\070","\117\076\110\047\049\050\076\118\072\050\073\113\116\111\055\066\049\106\067\061","\122\113\089\056\104\057\120\117\072\106\116\111\088\083\107\119\122\050\076\072","\049\120\110\107\049\115\061\061","\049\120\106\066\049\120\106\122\057\070\061\061","\065\055\084\079\049\114\047\061","\119\113\111\061","\049\100\052\089\119\082\109\061"}for l,R in ipairs({{222947+-222946,944333-944280},{-980035-(-980036);537350-537337},{712717+-712703,25101-25048}})do while R[326060+-326059]<R[591593+-591591]do o[R[-191270-(-191271)]],o[R[-705688-(-705690)]],R[-560403+560404],R[584581-584579]=o[R[607043-607041]],o[R[-880874-(-880875)]],R[-318500+318501]+(-903971-(-903972)),R[476069+-476067]-(324753+-324752)end end local function l(l)return o[l-(-543440+547972)]end do local l=table.concat local R=string.sub local Y=math.floor local K=string.len local F=table.insert local T=string.char local c=o local p={v=89728+-89685,T=-738915+738976,i=877499-877436,M=-187954-(-187960);W=1008036+-1008001;m=65567-65559;k=-213842-(-213887);X=729245+-729203,Z=903600-903566,j=401415-401394,I=-92654+92655;y=-965975-(-966037),o=-198409+198413,S=579488+-579458,H=629951+-629932;U=1032300+-1032242,D=-372648+372674;["\056"]=362170-362113,O=174308+-174264,["\047"]=-437793+437849;b=-320705+320744;K=-456107-(-456147),e=1012797+-1012779;q=-280782+280785;f=797564-797505;t=-98121-(-98134),a=23968+-23920;["\057"]=-194257+194286;["\049"]=790205-790180,z=-649477-(-649523);N=893969+-893958;["\054"]=-701036+701038;G=-638434-(-638458);["\051"]=725818-725787,["\048"]=95846-95837,r=-780604+780626,c=192669-192609;F=-426686-(-426718),E=782135-782085,s=856580-856564,n=-1043170+1043175,l=929231+-929219,u=267827+-267810,R=373822+-373767,L=15199-15162;["\052"]=814781+-814732,Q=-491696-(-491706),["\055"]=-838362+838415,x=-601887-(-601941);C=48947-48919;["\053"]=-1021991-(-1022032),B=-385939-(-385991),J=805706-805673;g=-102603+102618;V=472292-472272,h=-200919+200933;p=-292751+292787,A=-231932+231955;["\043"]=-382854-(-382854),Y=-745329+745376;d=3677+-3639;w=134127+-134100,P=111066-111015,["\050"]=590502+-590495}local W=type for o=611932+-611931,#c,-70170-(-70171)do local w=c[o]if W(w)=="\115\116\114\105\110\103"then local W=K(w)local I={}local O=528340+-528339 local j=487836+-487836 local z=-434520+434520 while O<=W do local o=R(w,O,O)local l=p[o]if l then j=j+l*(-531273+531337)^((-308760-(-308763))-z)z=z+(609123+-609122)if z==779550+-779546 then z=675171-675171 local o=Y(j/(-882064-(-947600)))local l=Y((j%(643236+-577700))/(-875869+876125))local R=j%(12563+-12307)F(I,T(o,l,R))j=-1041220-(-1041220)end elseif o=="\061"then F(I,T(Y(j/(-967840-(-1033376)))))if O>=W or R(w,O+(-941622+941623),O+(188581-188580))~="\061"then F(I,T(Y((j%(688989-623453))/(488097-487841))))end break end O=O+(-199176+199177)end c[o]=l(I)end end end return(function(o,Y,K,F,T,c,p,I,e,z,Z,O,A,R,b,j,s,V,W,B,w)e,j,Z,b,z,w,W,O,V,I,B,A,s,R=function(o,l)local Y=j(l)local K=function()return R(o,{},l,Y)end return K end,function(o)for l=-186591+186592,#o,-494747+494748 do w[o[l]]=(-959619+959620)+w[o[l]]end if K then local R=K(true)local Y=T(R)Y[l(-857338-(-861873))],Y[l(933405-928838)],Y[l(426558+-422015)]=o,z,function()return-479362+821221 end return R else return F({},{[l(143090+-138523)]=z,[l(143929-139394)]=o;[l(-371120+375663)]=function()return 122771+219088 end})end end,function(o,l)local Y=j(l)local K=function(K)return R(o,{K},l,Y)end return K end,function(o,l)local Y=j(l)local K=function(...)return R(o,{...},l,Y)end return K end,function(o)local l,R=-752358-(-752359),o[659801-659800]while R do w[R],l=w[R]-(761866+-761865),l+(-814545+814546)if w[R]==-808388+808388 then w[R],W[R]=nil,nil end R=o[l]end end,{},{},-13563+13563,function(o)w[o]=w[o]-(-562562+562563)if w[o]==-427922+427922 then w[o],W[o]=nil,nil end end,function()O=O+(-254118+254119)w[O]=-641441-(-641442)return O end,function(o,l)local Y=j(l)local K=function(K,F)return R(o,{K,F},l,Y)end return K end,function(o,l)local Y=j(l)local K=function(K,F,T,c,p,W,w)return R(o,{K;F,T;c,p,W,w},l,Y)end return K end,function(o,l)local Y=j(l)local K=function(K,F,T,c,p)return R(o,{K,F;T,c;p},l,Y)end return K end,function(R,K,F,T)local y,p,u,f,d,w,U,E,z,v,t,X,b,x,h,r,G,k,Q,g,L,M,P,N,a,O,i,H,J,n,C,D,q,j while R do if R<8798152-(-521269)then if R<6112924-281723 then if R<-911231+2325970 then if R<-149217+1185059 then if R<1244615-783113 then if R<865443+-486446 then if R<165433-(-61071)then D=W[O]Q=D R=D and 15162183-(-599699)or-272296+14184052 else p=l(-615865+620412)w=l(-142020+146564)R=o[p]p=o[w]w=l(366557-362013)o[w]=R w=l(181449+-176902)o[w]=p R=-331596+16490901 w=W[F[-751615-(-751616)]]O=w()end else w=l(393394+-388819)p=l(227210+-222652)R=o[p]p=R(w)R=o[l(-816298-(-820860))]p={}end else if R<1004175+-529277 then q=q+h G=q<=M N=not g G=N and G N=q>=M N=g and N G=N or G N=312225+11801501 R=G and N G=356392+8957684 R=R or G else R=true R=378087+5532466 end end else if R<641339-(-622494)then if R<-770603+1913301 then R=W[F[-636072+636082]]O=W[F[614947+-614936]]w[R]=O R=W[F[-566988-(-567000)]]O={R(w)}p={Y(O)}R=o[l(-245275-(-249859))]else H=H+n a=H<=U x=not t a=x and a x=H>=U x=t and x a=x or a x=790225+10381644 R=a and x a=14907601-(-940364)R=R or a end else if R<566930-(-768035)then j=388241+-388209 O=W[F[867855-867852]]n=31704+-31691 w=O%j z=W[F[343035+-343031]]U=434930+-434928 J=W[F[-53319-(-53321)]]G=W[F[-260181-(-260184)]]x=G-w G=118405-118373 t=x/G H=n-t a=U^H i=J/a b=z(i)z=-170833+4295138129 a=-931809-(-931810)j=b%z b=940265+-940263 z=b^w O=j/z z=W[F[350268-350264]]J=O%a a=729847+4294237449 i=J*a U=-862460+862716 J=-443205-(-508741)b=z(i)z=W[F[825049-825045]]i=z(O)j=b+i w=nil b=-757281-(-822817)z=j%b O=nil i=j-z b=i/J J=-668014-(-668270)i=z%J j=nil a=z-i J=a/U U=1021057+-1020801 z=nil n=988382+-988126 a=b%U H=b-a U=H/n b=nil H={i,J;a;U}a=nil R=783490+668525 J=nil U=nil W[F[-621596+621597]]=H i=nil else p=l(503170+-498593)R=o[p]z=l(-593200-(-597752))w=W[F[-474702-(-474706)]]a=l(382000-377426)U=s(15183927-676805,{})j=o[z]J=o[a]a={J(U)}J=625067-625065 i={Y(a)}b=i[J]z=j(b)j=l(-222283-(-226863))O=w(z,j)w={O()}p=R(Y(w))O=W[F[-145586-(-145591)]]w=p R=O and 80111+14992582 or-867827+3514342 p=O end end end else if R<2421870-144910 then if R<673512+1405791 then if R<799830+1069162 then if R<2632847-978136 then j=l(-357151+361700)R=o[l(588455-583889)]O=o[j]j=l(238466+-233898)w=O[j]j=W[F[-434515-(-434516)]]O={w(j)}p={Y(O)}else R={}b=35184372445059-356227 W[F[266249+-266247]]=R p=W[F[41218-41215]]z=p p=O%b H=-962729+962730 J=619188-618933 W[F[30743+-30739]]=p i=O%J a=l(-816113-(-820674))J=574113-574111 b=i+J W[F[791409-791404]]=b J=o[a]a=l(794448+-789891)i=J[a]R=598342-(-554867)n=H J=i(w)i=l(-993289-(-997844))H=46361-46361 j[O]=i i=834636-834576 t=n<H a=875161-875160 H=a-n U=J end else O=W[F[-497439-(-497441)]]j=W[F[-693197+693200]]w=O==j p=w R=-818318+17358945 end else if R<2828182-652732 then k=k+v p=k<=r h=not M p=h and p h=k>=r h=M and h p=h or p h=14157288-(-575463)R=p and h p=-1007276+3247535 R=R or p else r=W[O]k=r R=r and-574444+9807199 or-435286+14492644 end end else if R<-881025+5805015 then if R<2486951-(-1016103)then W[F[-349511+349516]]=p w=nil R=193616+5730381 else R=-923344+9540346 end else if R<5466069-50825 then O=W[F[-663241+663244]]j=-285842+285843 w=O~=j R=w and 1640618-314165 or-1014784+7397843 else R=o[l(311473+-306908)]p={O}end end end end else if R<8007449-593025 then if R<151037+6617366 then if R<-663054+6937490 then if R<6759226-812821 then if R<6608992-694116 then R=Z(-478478+10474064,{z})r={R()}p={Y(r)}R=o[l(-743337+747908)]else R=W[F[902169-902162]]R=R and 15056264-(-778824)or-322423+8360058 end else J=not i j=j+b O=j<=z O=J and O J=j>=z J=i and J O=J or O J=1040869+14520813 R=O and J O=135096+1002492 R=R or O end else if R<-1034804+7437404 then R=-128169+5090227 j=-498990+499004 O=W[F[-235105-(-235108)]]w=O*j O=514932+-514675 p=w%O W[F[-696378+696381]]=p else C=953829+-953827 R=184173+10084198 f=X[C]C=W[y]u=f==C Q=u end end else if R<905118+6117420 then if R<7626837-645648 then R=W[F[970481+-970480]]w=K[-115341-(-115342)]O=K[-173284+173286]j=R R=j[O]R=R and 7143760-(-294566)or 203988+1653805 else q=#x M=-984634+984634 G=q==M R=G and 223919+16209760 or 8158859-(-250779)end else if R<-351221+7572245 then R=o[l(-228955-(-233505))]p={}else a=l(1003281+-998732)i=p J=l(994480-989908)p=o[J]J=l(-415389+419948)R=p[J]J=I()W[J]=R p=o[a]a=l(578058+-573505)R=p[a]a=R H=R t=l(5739+-1190)n=o[t]R=n and 9189005-(-133311)or 8632711-(-700138)U=n end end end else if R<9153743-127905 then if R<686081+7586515 then if R<-930168+8990169 then if R<7822111-77890 then R=5553585-(-263115)else j=W[F[948563+-948554]]R={}z=j w=R O=783024-783023 R=-97952+6227450 j=-1022501-(-1022502)b=j j=-932698+932698 i=b<j j=O-b end else v=l(-620539+625091)R=o[v]h=l(-62315-(-66859))M=o[h]v=R(M)R=l(399034+-394487)o[R]=v R=164564+4316037 end else if R<9403783-909106 then M=#x q=385975+-385974 G=z(q,M)q=i(x,G)M=W[t]N=511099+-511098 G=nil g=q-N h=J(g)M[q]=h q=nil R=-121644+7119699 else R=true R=R and-915646+17567300 or-38444+7100098 end end else if R<9765127-559112 then if R<-213235+9331035 then H=l(545509-540949)U=o[H]p=U R=201365+9162450 else D=R C=-134483-(-134484)f=X[C]C=false u=f==C R=u and-227921+6828177 or-823706+11092077 Q=u end else if R<8813367-(-446003)then r=n==t k=r R=-739628+14796986 else M=-516277-(-516277)q=#x R=-98191+8507829 G=q==M end end end end end else if R<13648009-(-1037401)then if R<12454927-353737 then if R<9770667-(-420980)then if R<8624227-(-901335)then if R<-483220+9823740 then if R<981994+8349551 then x=l(-221841-(-226390))t=o[x]R=10266848-933999 x=l(95705-91145)n=t[x]U=n else p=U R=H R=U and 8791974-(-571841)or-246700+9338102 end else x=l(280835-276261)U=I()W[U]=p n=65933-65868 G=B(11874512-689408,{})H=773524+-773521 R=W[J]p=R(H,n)H=I()R=-128794+128794 n=R W[H]=p p=o[x]R=295287+-295287 x={p(G)}p=619458-619456 t=R R={Y(x)}x=R R=x[p]p=l(-513696+518273)G=R R=o[p]q=W[j]v=l(-542379+546931)r=o[v]v=r(G)r=l(935021+-930441)k=q(v,r)q={k()}p=R(Y(q))q=I()W[q]=p k=W[H]p=30107+-30106 r=k k=-41590+41591 v=k k=307495-307495 M=v<k k=p-v R=-392371+2472087 end else if R<11382+9929106 then Q=W[O]R=Q and 8480057-(-686228)or 14480961-(-731225)p=Q else R=157161+16002144 end end else if R<10558953-(-624114)then if R<12117154-1011337 then p=Q R=D R=14349516-(-862670)else R=298754+854455 a=H v=l(84049-79488)r=o[v]v=l(202820-198272)k=r[v]r=k(w,a)k=W[F[-902813+902819]]v=k()q=r+v G=q+i v=239032-239031 q=132341+-132085 x=G%q i=x q=j[O]r=i+v a=nil k=z[r]G=q..k j[O]=G end else if R<11371947-(-98103)then j=8951297-(-74278)O=l(543877+-539308)p=1729754-(-210135)w=O^j R=p-w p=l(-878649+883231)w=R R=p/w p={R}R=o[l(108324-103791)]else j=l(511367-506806)w=K R=true z=I()J=l(1006351-1001777)O=I()W[O]=R p=o[j]j=l(930502+-925938)R=p[j]j=I()W[j]=R R=s(373488+69856,{})W[z]=R b=I()R=false a=s(875131+14898106,{b})W[b]=R i=o[J]J=i(a)R=J and-487291+15231003 or-754703+8029166 p=J end end end else if R<14808685-790019 then if R<14447424-656880 then if R<-408060+13521080 then if R<12531109-(-543533)then R=1347572-884431 G=q N=G x[G]=N G=nil else d=V(d)y=V(y)N=V(N)g=V(g)R=1334770-(-744946)h=V(h)P=V(P)X=nil end else R=16474661-(-83611)end else if R<340000+13625258 then W[O]=Q C=W[d]L=674781+-674780 f=C+L u=X[f]D=n+u u=-798513-(-798769)R=D%u f=W[N]n=R u=t+f f=540967+-540711 D=u%f t=D R=-99128+13200830 else M=l(-895402-(-899949))R=o[M]M=l(-198216-(-202760))o[M]=R R=4300361-(-180240)end end else if R<1002672+13322666 then if R<13807667-(-356065)then W[O]=k R=W[O]R=R and-668166+13783395 or 1426423-933249 else R=true R=R and 15759396-(-295461)or 6132248-221695 end else if R<-62507+14707903 then p=-826274+3085958 O=l(703647+-699096)j=-783090+15861012 w=O^j R=p-w p=l(-320461-(-325039))w=R R=p/w p={R}R=o[l(43714+-39175)]else O=W[F[357624+-357622]]j=-668106+668247 w=O*j O=609295+27509018142202 p=w+O w=35184371559590-(-529242)R=p%w W[F[966362-966360]]=R w=W[F[-980845-(-980848)]]O=-405445+405446 p=w~=O R=5663346-(-719713)end end end end else if R<16516824-706065 then if R<75891+15357942 then if R<-623721+15522261 then if R<14761783-(-79611)then if R<558159+14178791 then g=l(704272+-699700)E=346483-336483 N=955516+-955416 h=I()W[h]=k p=o[g]g=l(-360139+364698)R=p[g]g=102096-102095 p=R(g,N)g=I()W[g]=p d=92721-92466 R=W[J]N=-734169+734169 y=-13165+13166 p=R(N,d)N=I()W[N]=p R=W[J]d=-864051-(-864052)P=W[g]L=-884780-(-884780)X=301773+-301771 p=R(d,P)d=I()W[d]=p p=W[J]P=p(y,X)p=304623-304622 R=P==p X=l(-787164-(-791745))u=l(313460+-308908)p=l(72994-68414)P=I()W[P]=R D=o[u]f=W[J]R=l(-8809+13392)C={f(L,E)}u=D(Y(C))D=l(-885075-(-889656))Q=u..D y=X..Q R=G[R]X=l(-655567+660141)R=R(G,p,y)y=I()Q=B(15417191-(-825720),{J;h,H;j,O;q;P;y,g;d;N;U})W[y]=R p=o[X]X={p(Q)}R={Y(X)}X=R R=W[P]R=R and 9011461-(-559769)or-925093+1051832 else R=-962196+8236659 i=W[b]p=i end else p={}R=o[l(-524939-(-529509))]end else if R<15688203-607456 then R=3596588-950073 j=W[F[951411-951405]]O=j==w p=O else W[O]=p R=-199205+13300907 end end else if R<-382232+16031987 then if R<901057+14696823 then O=j a=-100884+100884 R=W[F[-506568-(-506569)]]U=-534314-(-534569)J=R(a,U)w[O]=J R=-958608+7088106 O=nil else w=W[F[-468070-(-468071)]]p=#w w=638323+-638323 R=p==w R=R and 14505287-(-172334)or 1278939-(-173076)end else if R<16772707-1004373 then R=990104+12921652 u=536885+-536884 D=X[u]Q=D else p={}R=true W[F[755431-755430]]=R R=o[l(311075+-306502)]end end end else if R<16727914-382975 then if R<-285100+16350382 then if R<16270486-232041 then if R<-368362+16214552 then w=l(-829475+834033)j=-24454+24454 R=o[w]O=W[F[842975+-842967]]w=R(O,j)R=83378+7954257 else J=nil z=nil R=4829179-(-987521)i=nil end else R=297174+8319828 end else if R<15999547-(-179915)then R=true R=R and-630268+932633 or 14217309-(-638791)else O=W[F[-582968+582969]]b=-35215+35217 z=-309474-(-309475)j=O(z,b)O=-404578-(-404579)w=j==O p=w R=w and 15793540-(-747087)or-383630+2462316 end end else if R<-896191+17451662 then if R<15582811-(-912989)then N={}q=I()P=l(247043-242508)u=nil i=nil G={}h=I()M=e(994106+14639669,{q;U,H;b})W[q]=G g=l(424115+-419530)G=I()W[G]=M M={}X=l(143381-138818)W[h]=M M=o[g]y=W[h]d={[P]=y,[X]=u}g=M(N,d)M=A(6109706-(-865479),{h;q,t,U,H;G})U=V(U)J=nil j=g O=M q=V(q)n=nil H=V(H)U=l(-254191-(-258770))x=nil J=l(-377841-(-382379))h=V(h)a=nil b=V(b)G=V(G)n=899126+29444305911129 b=l(734881+-730339)a=115211+19773922583020 t=V(t)z=nil z=o[b]H=29995787820415-435952 x=32682548334587-(-191351)b=z()t=892103+25000799621298 i=O(J,a)z=j[i]a=O(U,H)J=j[a]H=l(1039393-1034856)U=O(H,n)a=j[U]n=l(993783-989229)R=o[l(143819+-139283)]H=O(n,t)t=l(1003446+-998906)U=j[H]n=O(t,x)H=j[n]i={[J]=a,[U]=H}J=l(466997+-462456)b[z]=i p={}b=l(-1001794-(-1006370))z=o[b]n=4782312987538-(-519456)H=l(-189407-(-193963))i=o[J]U=O(H,n)a=j[U]U=l(-127987+132533)U=i[U]J={U(i,a)}O=nil j=nil b=z(Y(J))z=b()else R=p and 501582-(-878928)or 4900191-(-1023806)end else if R<751543+15808682 then z=V(z)O=V(O)n=nil j=V(j)i=nil t=nil x=nil O=nil a=nil j=nil i=l(368786-364214)H=V(H)J=V(J)q=V(q)J=l(-237379+241951)G=nil b=V(b)U=V(U)b=o[i]H=I()i=l(-792406+796951)z=b[i]b=I()G=778440+-778439 W[b]=z a=l(102547-97998)i=o[J]R=-156178-(-619319)J=l(311813-307254)x={}U=l(-888630-(-893191))z=i[J]J=o[a]n={}a=l(-392524+397092)t=I()i=J[a]a=o[U]U=l(-327646-(-332180))J=a[U]q=-678150+678406 M=q a=-829550-(-829550)U=I()W[U]=a a=387418-387416 W[H]=a W[t]=n n=-5970-(-5970)a={}q=-793867-(-793868)h=q q=-585322-(-585322)g=h<q q=G-h else M=-786162-(-786168)v=989602+-989601 R=W[J]r=R(v,M)R=l(-937677+942224)o[R]=r M=l(787484-782937)v=o[M]M=498536+-498534 R=v>M R=R and 359402+7866141 or 13289848-(-698125)end end end end end end end R=#T return Y(p)end return(b(11846947-(-108941),{}))(Y(p))end)(getfenv and getfenv()or _ENV,unpack or table[l(716189-711629)],newproxy,setmetatable,getmetatable,select,{...})end)(...)
+local UI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Crokier/Roblox/main/Packages/Sampluy/init.luau"))()
+
+local Services = setmetatable({}, {__index = function(_, i) return cloneref and cloneref(game:GetService(i)) or game:GetService(i) end})
+local Players = Services.Players
+local ReplicatedStorage = Services.ReplicatedStorage
+
+local LocalPlayer = Players.LocalPlayer
+local PlayerGui = LocalPlayer:FindFirstChildOfClass("PlayerGui")
+local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+
+local Enableds = {["Collect"] = false, ["Upgrade"] = false, ["ClaimIndex"] = false, ["ClickMultiply"] = false, ["Rebirth"] = false, }
+local Connections = {}
+local Values = {}
+
+local Modules = {}
+
+local Packets = {
+	["Rebirth"] = ReplicatedStorage:QueryDescendants("#Remotes > #Rebirth")[1],
+	["ClaimIndex"] = ReplicatedStorage:QueryDescendants("#Remotes > #ClaimIndexRewards")[1],
+	["UpgradeCharacter"] = ReplicatedStorage:QueryDescendants("#Remotes > #UpgradeCharacter")[1]
+}
+
+local Interfaces = {
+	["RebirthFill"] = PlayerGui:QueryDescendants("#ScreenGui > #Rebirth > #Frame > #Progress > #Bar")[1],
+	["RebirthButton"] = PlayerGui:QueryDescendants("#ScreenGui > #Rebirth > #Frame > #Rebirth")[1],
+	["TrailScroll"] = PlayerGui:QueryDescendants("#ScreenGui > #TrailShop > #ScrollingFrame")[1],
+}
+
+local Plot = {}
+
+local AreasList = {
+	"Automatic"
+}
+
+Values.ChosenArea = "Automatic"
+
+local Areas = {
+	["Grass"] = {
+		Speed = 0
+	},
+	["Plains"] = {
+		Speed = 800
+	},
+	["Desert"] = {
+		Speed = 9000
+	},
+	["Safari"] = {
+		Speed = 40000
+	},
+	["Snow"] = {
+		Speed = 150000
+	},
+	["Mines"] = {
+		Speed = 750000
+	},
+	["Jungle"] = {
+		Speed = 2500000
+	},
+	["Lava"] = {
+		Speed = 15000000
+	},
+	["Hacked"] = {
+		Speed = 500000000
+	},
+	["Strawb"] = {
+		Speed = 1500000000
+	}
+}
+
+local ProfileData = LocalPlayer:GetAttributes()
+
+if ProfileData.Speed ~= nil then
+	Connections.SpeedChanged = LocalPlayer:GetAttributeChangedSignal("Speed"):Connect(function()
+		ProfileData.Speed = LocalPlayer:GetAttribute("Speed")
+	end)
+else
+	ProfileData.Speed = 0
+end
+
+Connections.CharacterAdded = LocalPlayer.CharacterAdded:Connect(function(newCharacter)
+	Character = newCharacter
+end)
+
+local SpawnedEggs = workspace:FindFirstChild("Eggs")
+if SpawnedEggs then
+	for i, v in ipairs(SpawnedEggs:GetChildren()) do
+		table.insert(AreasList, v.Name)
+	end
+end
+
+local GuardAreas = SpawnedEggs
+
+local Waypoints = {
+	SafeArea = Vector3.new(160, 17.85, -28)
+}
+
+local treadmills = workspace:QueryDescendants("#Treadmills > #Base1")[1]
+if treadmills then
+	treadmills = treadmills.Parent
+	for _, treadmill in ipairs(treadmills:GetChildren()) do
+		local ownerId = treadmill:GetAttribute("OwnerId")
+		if ownerId ~= nil and ownerId == LocalPlayer.UserId then
+			Plot.Treadmill = treadmill
+			break
+		end
+	end
+	if Plot.Treadmill then
+		Plot.UpgradeTreadmillButton = Plot.Treadmill:QueryDescendants("#UpgradeFrame > #SurfaceGui > #CanvasGroup > #Buy")[1]
+	end
+end
+
+local bases = workspace:QueryDescendants("#Bases > #Base1")[1]
+if bases then
+	bases = bases.Parent
+	for _, base in ipairs(bases:GetChildren()) do
+		local ownerId = base:GetAttribute("OwnerId")
+		if ownerId ~= nil and ownerId == LocalPlayer.UserId then
+			Plot.Base = base
+			break
+		end
+	end
+	if Plot.Base then
+		Plot.Slots = Plot.Base:FindFirstChild("Slots")
+	end
+end
+
+local UpgradeTypes = {"Treadmill","Brainrot","Buy Trail"}
+local UpgradeActives = {["AllEnabled"]=true}
+
+for _, upgradeType in ipairs(UpgradeTypes) do
+	UpgradeActives[upgradeType] = false
+end
+
+local TrailInfos = {}
+
+if Interfaces.TrailScroll then
+	local sortTrails={}
+
+	for _,layer in ipairs(Interfaces.TrailScroll:GetChildren()) do
+		if layer and layer.Parent and layer:IsA("GuiObject") then
+			local button=layer:QueryDescendants("#Buttons > #CashButton")[1]
+			if not button then continue end
+
+			local title=layer:QueryDescendants("#Buttons > #CashButton > #TextLabel")[1]
+			if not title then continue end
+
+			table.insert(sortTrails, {
+				["Button"]=button,
+				["Title"]=title,
+				["Tier"]=layer.LayoutOrder
+			})
+		end
+	end
+
+	table.sort(sortTrails, function(a, b)
+		return a.Tier<b.Tier
+	end)
+
+	for _,info in ipairs(sortTrails) do
+		table.insert(TrailInfos,info)
+	end
+end
+
+local function FireButton(button)
+	if firesignal then
+		if not (button and button.Parent) then return end
+		firesignal(button.Activated)
+		firesignal(button.MouseButton1Click)
+	end
+end
+
+local function FirePrompt(prompt)
+	if fireproximityprompt then
+		if not (prompt and prompt.Parent) then return end
+		fireproximityprompt(prompt)
+	end
+end
+local function WalkTo(humanoid, position)
+	local rootPart = humanoid.RootPart
+	while true do
+		if not (humanoid and humanoid.Parent) then return false end
+
+		humanoid:MoveTo(position)
+		local reached = humanoid.MoveToFinished:Wait()
+
+		if reached then
+			return true
+		end
+
+		if rootPart and rootPart.Parent then
+			local flat = (Vector2.new(rootPart.Position.X, rootPart.Position.Z) - Vector2.new(position.X, position.Z)).Magnitude
+			if flat <= 4 then
+				return true
+			end
+		else
+			return false
+		end
+	end
+end
+
+local function GetBestArea()
+	local currentSpeed = ProfileData.Speed
+	local bestName, bestSpeed = nil, -1
+
+	if Values.ChosenArea == "Automatic" then
+		for name, data in pairs(Areas) do
+			if data.Speed <= currentSpeed and data.Speed > bestSpeed then
+				bestName = name
+				bestSpeed = data.Speed
+			end
+		end
+	else
+		bestName = Values.ChosenArea
+	end
+
+	return bestName or "Plains"
+end
+
+local Window = UI:CreateWindow({
+	Name = "Steal A Lucky Egg",
+	Destroying = function()
+		for key, enabled in pairs(Enableds) do
+			Enableds[key] = false
+		end
+	end
+})
+
+Window:AddDropdown({
+	Name = "Area",
+	Options = AreasList,
+	Option = Values.ChosenArea,
+	Multi = false,
+	Callback = function(option)
+		Values.ChosenArea = option[1]
+	end
+})
+
+Window:AddToggle({
+	Text = "Auto Collect",
+	Value = false,
+	Callback = function(value)
+		Enableds.Collect = value
+		if not Enableds.Collect then return end
+		Modules.MutationsData = Modules.MutationsData or require(ReplicatedStorage.ClientModules.MutationsModule:Clone())
+
+		task.spawn(function()
+			while Enableds.Collect do
+				task.wait()
+				local humanoid = Character:FindFirstChildOfClass("Humanoid")
+
+				task.wait(0.1)
+				WalkTo(humanoid, Waypoints.SafeArea)
+				task.wait(0.1)
+				local selectBestArea = GetBestArea()
+				local bestArea = GuardAreas[selectBestArea]
+				local bestBounds = nil
+				local alreadyAreas = {}
+				local bestBounds = bestArea:FindFirstChild("EggZone")
+
+				if not bestBounds then
+					repeat 
+						for index=2,#AreasList do
+							if not Enableds.Collect then break end
+							bestBounds = bestArea:FindFirstChild("EggZone")
+							if bestBounds then break end
+							local selectArea = AreasList[index]
+							if alreadyAreas[selectArea] then continue end
+							local area = GuardAreas:FindFirstChild(selectArea)
+							local bounds = area:FindFirstChild("EggZone")
+							if bounds then
+								local reached = WalkTo(humanoid, bounds.Position)
+								if reached then
+									alreadyAreas[selectArea] = true 
+								end
+							end
+							task.wait()
+						end
+
+						task.wait(1)
+					until bestBounds ~= nil or not Enableds.Collect
+					if not Enableds.Collect then break end
+				end
+				WalkTo(humanoid, bestBounds.Position)
+
+				local eggs = {}
+
+				for _, folder in ipairs(bestArea:GetChildren()) do
+					if not Enableds.Collect then break end
+					if folder and folder.Parent and folder:IsA("Folder") and folder.Name == "EggFolder" then
+						for _, egg in ipairs(folder:GetChildren()) do
+							if egg and egg.Parent and egg:IsA("Model") and egg.Name~="Crest" then
+								local sizeTier = egg:GetAttribute("SizeTier")
+								if not sizeTier then continue end
+
+								local sizeValue = egg:GetAttribute("SizeValue")
+								if not sizeValue then continue end
+
+								sizeTier = string.match(sizeTier, "[%d%.]+")
+
+								sizeValue = sizeValue * (tonumber(sizeTier) or 1)
+
+								local mutation = egg:GetAttribute("Mutation")
+								if mutation ~= nil then
+									local info = Modules.MutationsData[mutation]
+									if info and info.Multiple then
+										sizeValue = sizeValue * info.Multiple 
+									end
+								end
+
+								table.insert(eggs, {
+									["RootPart"] = egg.PrimaryPart,
+									["Tier"] = sizeValue,
+								})
+							end
+						end
+					end
+				end
+
+				if not Enableds.Collect then break end
+
+				table.sort(eggs, function(a, b)
+					return a.Tier > b.Tier
+				end)
+
+				local closestEgg = eggs[1].RootPart
+
+				if closestEgg then
+					WalkTo(humanoid, closestEgg.Position)
+
+					task.wait(0.5)
+
+					WalkTo(humanoid, closestEgg.Position)
+					task.wait()
+
+					local prompt:ProximityPrompt = closestEgg:FindFirstChildOfClass("ProximityPrompt")
+					if prompt then
+						repeat
+							FirePrompt(prompt)
+							task.wait(0.1)
+						until not (closestEgg.Parent and prompt.Enabled) or not Enableds.Collect
+					end
+					task.wait(0.5)
+				end
+
+				WalkTo(humanoid, Waypoints.SafeArea)
+				table.clear(eggs)
+				task.wait(1)
+			end
+		end)
+	end
+})
+
+Window:AddToggle({
+	Text = "Click Multiply",
+	Value = false,
+	Callback = function(value)
+		Enableds.ClickMultiply = value
+		if  Connections.MultiplyAdded then  Connections.MultiplyAdded:Disconnect() Connections.MultiplyAdded = nil end
+		if not Enableds.ClickMultiply then return end
+		Connections.MultiplyAdded = Connections.MultiplyAdded or PlayerGui.ScreenGui.Multiply.ChildAdded:Connect(function(child)
+			task.wait(1)
+			if Enableds.ClickMultiply and child and child.Parent and child:IsA("GuiObject") and child.Visible == true then
+				FireButton(child)
+			end
+		end)
+		for _, child in ipairs(PlayerGui.ScreenGui.Multiply:GetChildren()) do
+			if not Enableds.ClickMultiply then break end
+			if child and child.Parent and child:IsA("GuiObject") and child.Visible == true then
+				FireButton(child)
+				task.wait()
+			end
+		end
+	end
+})
+
+Window:AddDropdown({
+	Text="Upgrade Type",
+	Options=#UpgradeTypes>0 and UpgradeTypes or {"No Upgrade Type"},
+	Option=nil,
+	Multi=true,
+	Callback=function(option)
+		for _,key in ipairs(UpgradeTypes) do
+			UpgradeActives[key]=table.find(option,key)~=nil
+		end
+		UpgradeActives.AllEnabled=#option<=0
+	end
+})
+
+Window:AddToggle({
+	Text="Auto Upgrade",
+	Value=false,
+	Callback=function(value)
+		Enableds.Upgrade=value
+		if not Enableds.Upgrade then return end
+		task.spawn(function()
+			while Enableds.Upgrade do
+				if UpgradeActives["Treadmill"] == true and Plot.UpgradeTreadmillButton then
+					FireButton(Plot.UpgradeTreadmillButton)
+				end
+				task.wait(1)
+			end
+		end)
+		Values.SlotCache = {}
+		task.spawn(function()
+			while Enableds.Upgrade do
+				if UpgradeActives["Brainrot"] == true and Packets.UpgradeCharacter then
+					for _, slot in ipairs(Plot.Slots:GetChildren()) do
+						task.wait()
+						if not (UpgradeActives["Brainrot"] and Enableds.Upgrade) then break end
+						if slot and slot.Parent then
+							local slotState = slot:GetAttribute("SlotState")
+							if slotState ~= nil then
+								local info = Values.SlotCache[slot]
+								if info == nil then
+									info = {}
+									info.Title = info.Title or slot:QueryDescendants("#UpgradeModel > #UpgradePart > #SurfaceGui > #ImageButton > #Price")[1]
+									Values.SlotCache[slot] = info
+								end
+								info = Values.SlotCache[slot]
+								if info and slotState ~= "Empty" then
+									if info.Title and info.Title.Text == "MAX" then continue end
+									Packets.UpgradeCharacter:FireServer(Plot.Base, slot)
+								end
+							end
+						end
+					end
+				end
+				task.wait(1)
+			end
+		end)
+		task.spawn(function()
+			while Enableds.Upgrade do
+				if UpgradeActives["Buy Trail"] == true then
+					for _, info in ipairs(TrailInfos) do
+						if not (UpgradeActives["Buy Trail"] and Enableds.Upgrade) then break end
+						local key = info.Title.Text:lower()
+						if key:find("equip") or key:find("equipped") or key:find("unequipped") then continue end
+						if key:find("$") then
+							FireButton(info.Button)
+						end					
+						task.wait()
+
+					end
+				end
+				task.wait(1)
+			end
+		end)
+
+	end
+})
+
+Window:AddToggle({
+	Text = "Auto Rebirth",
+	Value = false,
+	Callback = function(value)
+		Enableds.Rebirth = value
+		if not Enableds.Rebirth then return end
+		task.spawn(function()
+			while Enableds.Rebirth do
+				if Interfaces.RebirthFill.Size.X.Scale >= 1 then
+					if Packets.Rebirth then
+						Packets.Rebirth:FireServer()
+					else
+						FireButton(Interfaces.RebirthButton)
+					end
+				end
+				task.wait()
+			end
+		end)
+	end
+})
+
+Window:AddToggle({
+	Text = "Claim Index",
+	Value = false,
+	Callback = function(value)
+		Enableds.ClaimIndex = value
+		if not Enableds.ClaimIndex then return end
+		task.spawn(function()
+			while Enableds.ClaimIndex do
+				Packets.ClaimIndex:FireServer()
+				task.wait(3)
+			end
+		end)
+	end
+})
+
+Window:AddLabel({
+	Text = "YouTube: Crokyreo",
+	TextColor3 = Color3.fromRGB(255, 255, 255)
+})
