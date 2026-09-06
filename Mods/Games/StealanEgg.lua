@@ -189,189 +189,133 @@ local Window = UI:CreateWindow({
 	end
 })
 
-Window:AddToggle({
-	Name = "Auto Farm",
-	Value = false,
-	Callback = function(v)
-		Enableds.Farm = v
-		if v then
-			task.spawn(function()
-				while Enableds.Farm do
-					task.wait()
+--Window:AddToggle({
+--	Name = "Auto Farm",
+--	Value = false,
+--	Callback = function(v)
+--		Enableds.Farm = v
+--		if v then
+--			task.spawn(function()
+--				while Enableds.Farm do
+--					task.wait()
 
-					Values.NoclipParts = {}
-					Values.SaveHipHeight = nil
+--					--Values.NoclipParts = {}
+--					--Values.SaveHipHeight = nil
 
-					if not (Character and Character.Parent) then continue end
+--					if not (Character and Character.Parent) then continue end
 
-					local humanoid = Character:FindFirstChildOfClass("Humanoid")
-					if not humanoid then continue end
+--					local humanoid = Character:FindFirstChildOfClass("Humanoid")
+--					if not humanoid then continue end
 
-					Values.LastHumanoid = humanoid
-					Values.SaveHipHeight = humanoid.HipHeight
+--					--Values.LastHumanoid = humanoid
+--					--Values.SaveHipHeight = humanoid.HipHeight
 
-					Connections.Noclipping = RunService.Stepped:Connect(function()
-						if Enableds.Farm then
-							for _, child in ipairs(Character:GetDescendants()) do
-								if child:IsA("BasePart") and child.CanCollide == true then
-									child.CanCollide = false
-									Values.NoclipParts[child] = true
-								end
-							end
-						end
-					end)
+--					--Connections.Noclipping = RunService.Stepped:Connect(function()
+--					--	if Enableds.Farm then
+--					--		for _, child in ipairs(Character:GetDescendants()) do
+--					--			if child:IsA("BasePart") and child.CanCollide == true then
+--					--				child.CanCollide = false
+--					--				Values.NoclipParts[child] = true
+--					--			end
+--					--		end
+--					--	end
+--					--end)
 
-					if Enableds.Collect and Packets.Steal then
-						task.wait(0.1)
-						WalkTo(humanoid, Waypoints.SafeArea)
-						task.wait(0.1)
-						local selectBestArea = GetBestArea()
-						local bestArea = GuardAreas[selectBestArea]
-						local bestBounds = nil
-						local alreadyAreas = {}
-						local bestBounds = bestArea:FindFirstChild("Bounds")
+--					task.wait(0.5)
 
-						if not bestBounds then
-							repeat 
-								for index=2,#AreasList do
-									if not Enableds.Collect then break end
-									bestBounds = bestArea:FindFirstChild("EggZone")
-									if bestBounds then break end
-									local selectArea = AreasList[index]
-									if alreadyAreas[selectArea] then continue end
-									local area = GuardAreas:FindFirstChild(selectArea)
-									local bounds = area:FindFirstChild("EggZone")
-									if bounds then
-										local reached = WalkTo(humanoid, bounds.Position)
-										if reached then
-											alreadyAreas[selectArea] = true 
-										end
-									end
-									task.wait()
-								end
+--					--if Enableds.Place and Packets.Place then
+--					--	if LastInventory ~= nil then
+--					--		--humanoid.HipHeight = 20
+--					--		task.wait(0.1)
+--					--		WalkTo(humanoid, Plot.CenterPoint.Position)
 
-								task.wait(1)
-							until bestBounds ~= nil or not Enableds.Collect
-							if not Enableds.Collect then break end
-						end
-						WalkTo(humanoid, bestBounds.Position)
-						local closestEgg, closestDist = nil, nil
-						for _, v in ipairs(SpawnedEggs:GetChildren()) do
-							if v and v.Parent then
-								local primaryPart = v.PrimaryPart or v:FindFirstChildOfClass("BasePart")
-								if primaryPart then
-									if Character and Character.Parent then
-										local rootPart = Character.PrimaryPart or Character:FindFirstChild("HumanoidRootPart")
-										if rootPart~=nil then 
-											local dist = (primaryPart.Position - Character.HumanoidRootPart.Position).Magnitude
-											if not closestDist or dist < closestDist then
-												closestDist = dist
-												closestEgg = v
-											end
-										end
-									end
-								end
-							end
-						end
+--					--		for i, v in pairs(LastInventory) do
+--					--			local randomArea = CFrame.new(math.random(-23, 23), -0.5001220703125, math.random(-29, 29), 0, 0, 1, 0, 1, 0, -1, 0, 0)
 
-						if closestEgg then
-							WalkTo(humanoid, closestEgg.PrimaryPart.Position)
+--					--			Packets.Place:InvokeServer(
+--					--				{
+--					--					Uid = i,
+--					--					LocalCFrame = randomArea
+--					--				}
+--					--			)
 
-							task.wait(0.5)
+--					--			task.wait()
+--					--		end
+--					--	end
+--					--end
 
-							WalkTo(humanoid, closestEgg.PrimaryPart.Position)
-							task.wait()
+--					--if Enableds.Hatch and Packets.Hatch and Packets.CompleteHatch then
+--					--	for i, v in ipairs(PlacedEggs:GetChildren()) do
+--					--		if not (v and v.Parent) then continue end
+--					--		local splitString = v.Name:split("_")
+--					--		if splitString[1] == tostring(LocalPlayer.UserId) then
+--					--			--Humanoid.HipHeight = 20
+--					--			task.wait(0.1)
+--					--			WalkTo(humanoid, v.PrimaryPart.Position)
 
-							Packets.Steal:InvokeServer({Uid = closestEgg.Name})
-						end
-						WalkTo(humanoid, Waypoints.SafeArea)
-					end
+--					--			local res = Packets.Hatch:InvokeServer(
+--					--				splitString[2]
+--					--			)
 
-					task.wait(0.5)
+--					--			if res then
+--					--				Packets.CompleteHatch:InvokeServer(splitString[2])
+--					--			end
 
-					if Enableds.Place and Packets.Place then
-						if LastInventory ~= nil then
-							--humanoid.HipHeight = 20
-							task.wait(0.1)
-							WalkTo(humanoid, Plot.CenterPoint.Position)
+--					--			task.wait(0.1)
+--					--		end
+--					--	end
+--					--end
 
-							for i, v in pairs(LastInventory) do
-								local randomArea = CFrame.new(math.random(-23, 23), -0.5001220703125, math.random(-29, 29), 0, 0, 1, 0, 1, 0, -1, 0, 0)
+--					--if Connections.Noclipping then
+--					--	Connections.Noclipping:Disconnect()
+--					--	Connections.Noclipping = nil
+--					--end
 
-								Packets.Place:InvokeServer(
-									{
-										Uid = i,
-										LocalCFrame = randomArea
-									}
-								)
+--					--for part in pairs(Values.NoclipParts) do
+--					--	if part and part.Parent then
+--					--		part.CanCollide = true
+--					--	end
+--					--end
 
-								task.wait()
-							end
-						end
-					end
+--					--Values.NoclipParts = {}
 
-					if Enableds.Hatch and Packets.Hatch and Packets.CompleteHatch then
-						for i, v in ipairs(PlacedEggs:GetChildren()) do
-							if not (v and v.Parent) then continue end
-							local splitString = v.Name:split("_")
-							if splitString[1] == tostring(LocalPlayer.UserId) then
-								--Humanoid.HipHeight = 20
-								task.wait(0.1)
-								WalkTo(humanoid, v.PrimaryPart.Position)
+--					--if humanoid and humanoid.Parent and Values.SaveHipHeight then
+--					--	humanoid.HipHeight = Values.SaveHipHeight
+--					--	Values.SaveHipHeight = nil
+--					--	Values.LastHumanoid = nil
+--					--end
+--					task.wait(1)
+--				end
+--			end)
+--		else
+--			--if Connections.Noclipping and not Enableds.Farm then
+--			--	Connections.Noclipping:Disconnect()
+--			--	Connections.Noclipping = nil
+--			--end
 
-								local res = Packets.Hatch:InvokeServer(
-									splitString[2]
-								)
+--			--if Values.LastHumanoid and Values.LastHumanoid.Parent and Values.SaveHipHeight then
+--			--	Values.LastHumanoid.HipHeight = Values.SaveHipHeight
+--			--	Values.SaveHipHeight = nil
+--			--	Values.LastHumanoid = nil
+--			--end
 
-								if res then
-									Packets.CompleteHatch:InvokeServer(splitString[2])
-								end
+--			--for part in pairs(Values.NoclipParts) do
+--			--	if Enableds.Farm then break end
+--			--	if part and part.Parent then
+--			--		part.CanCollide = true
+--			--	end
+--			--end
+--		end
+--	end
+--})
 
-								task.wait(0.1)
-							end
-						end
-					end
-
-					if Connections.Noclipping then
-						Connections.Noclipping:Disconnect()
-						Connections.Noclipping = nil
-					end
-
-					for part in pairs(Values.NoclipParts) do
-						if part and part.Parent then
-							part.CanCollide = true
-						end
-					end
-
-					Values.NoclipParts = {}
-
-					if humanoid and humanoid.Parent and Values.SaveHipHeight then
-						humanoid.HipHeight = Values.SaveHipHeight
-						Values.SaveHipHeight = nil
-						Values.LastHumanoid = nil
-					end
-					task.wait(1)
-				end
-			end)
-		else
-			if Connections.Noclipping and not Enableds.Farm then
-				Connections.Noclipping:Disconnect()
-				Connections.Noclipping = nil
-			end
-
-			if Values.LastHumanoid and Values.LastHumanoid.Parent and Values.SaveHipHeight then
-				Values.LastHumanoid.HipHeight = Values.SaveHipHeight
-				Values.SaveHipHeight = nil
-				Values.LastHumanoid = nil
-			end
-
-			for part in pairs(Values.NoclipParts) do
-				if Enableds.Farm then break end
-				if part and part.Parent then
-					part.CanCollide = true
-				end
-			end
-		end
+Window:AddDropdown({
+	Name = "Area",
+	Options = AreasList,
+	Option = Values.ChosenArea,
+	Multi = false,
+	Callback = function(option)
+		Values.ChosenArea = option[1]
 	end
 })
 
@@ -398,106 +342,82 @@ Interfaces.CollectToggle = Window:AddToggle({
 		if not Packets.Steal then
 			Enableds.Collect = false
 			Interfaces.CollectToggle:Replace(false)
+			return
 		end
-	end
-})
+		
+		task.spawn(function()
+			while Enableds.Collect do
+				local humanoid = Character:FindFirstChildOfClass("Humanoid")
+				task.wait(0.1)
+				WalkTo(humanoid, Waypoints.SafeArea)
+				task.wait(0.1)
+				local selectBestArea = GetBestArea()
+				local bestArea = GuardAreas[selectBestArea]
+				local bestBounds = nil
+				local alreadyAreas = {}
+				local bestBounds = bestArea:FindFirstChild("Bounds")
 
-Window:AddDropdown({
-	Name = "Area",
-	Options = AreasList,
-	Multi = false,
-	Callback = function(option)
-		Values.ChosenArea = option[1]
-	end
-})
+				if not bestBounds then
+					repeat 
+						for index=2,#AreasList do
+							if not Enableds.Collect then break end
+							bestBounds = bestArea:FindFirstChild("EggZone")
+							if bestBounds then break end
+							local selectArea = AreasList[index]
+							if alreadyAreas[selectArea] then continue end
+							local area = GuardAreas:FindFirstChild(selectArea)
+							local bounds = area:FindFirstChild("EggZone")
+							if bounds then
+								local reached = WalkTo(humanoid, bounds.Position)
+								if reached then
+									alreadyAreas[selectArea] = true 
+								end
+							end
+							task.wait()
+						end
 
-Interfaces.PlaceToggle = Window:AddToggle({
-	Name = "Auto Place",
-	Default = false,
-	Callback = function(v)
-		Enableds.Place = v
-		if v then
-			if not Packets.Place then
-				local ok, result = pcall(function()
-					return ReplicatedStorage.Packages.Networking["RF/EggWorld/AskPlaceEgg"]
-				end)
-				if ok and result then Packets.Place = result end
-
-				if not Packets.Place then
-					ok, result = pcall(function()
-						return ReplicatedStorage.Network["Eggs: RequestPlaceEgg"]
-					end)
-					if ok and result then Packets.Place = result end
+						task.wait(1)
+					until bestBounds ~= nil or not Enableds.Collect
+					if not Enableds.Collect then break end
 				end
-			end
-			if not Packets.Inventory then
-				local ok, result = pcall(function()
-					return ReplicatedStorage.Packages.Networking["RE/EggWorld/OwnerShifted"]
-				end)
-				if ok and result then Packets.Inventory = result end
-
-				if not Packets.Inventory then
-					ok, result = pcall(function()
-						return ReplicatedStorage.Network["Eggs: RuntimeOwnerUpdated"]
-					end)
-					if ok and result then Packets.Inventory = result end
-				end
-			end
-			if Packets.Inventory and not Connections.Inventory then
-				Connections.Inventory = Packets.InventoryChanged.OnClientEvent:Connect(function(data)
-					if data.OwnerUserId == LocalPlayer.UserId then
-						LastInventory = data.Records
+				WalkTo(humanoid, bestBounds.Position)
+				local closestEgg, closestDist = nil, nil
+				for _, v in ipairs(SpawnedEggs:GetChildren()) do
+					if v and v.Parent then
+						local primaryPart = v.PrimaryPart or v:FindFirstChildOfClass("BasePart")
+						if primaryPart then
+							if Character and Character.Parent then
+								local rootPart = Character.PrimaryPart or Character:FindFirstChild("HumanoidRootPart")
+								if rootPart~=nil then 
+									local dist = (primaryPart.Position - Character.HumanoidRootPart.Position).Magnitude
+									if not closestDist or dist < closestDist then
+										closestDist = dist
+										closestEgg = v
+									end
+								end
+							end
+						end
 					end
-				end)
-			end
-		end
-		if not (Packets.Place and Packets.Inventory) then
-			Enableds.Place = false
-			Interfaces.PlaceToggle:Replace(false)
-		end
-	end
-})
+				end
 
-Interfaces.HatchToggle = Window:AddToggle({
-	Name = "Auto Hatch",
-	Default = false,
-	Callback = function(v)
-		Enableds.Hatch = v
-		if v then
-			if not Packets.Hatch then
-				local ok, result = pcall(function()
-					return ReplicatedStorage.Packages.Networking["RF/EggWorld/AskHatch"]
-				end)
-				if ok and result then Packets.Hatch = result end
-				if not Packets.Hatch then
-					ok, result = pcall(function()
-						return ReplicatedStorage.Network["Eggs: RequestHatchEgg"]
-					end)
-					if ok and result then Packets.Hatch = result end
+				if closestEgg then
+					WalkTo(humanoid, closestEgg.PrimaryPart.Position)
+
+					task.wait(0.5)
+
+					WalkTo(humanoid, closestEgg.PrimaryPart.Position)
+					task.wait()
+
+					Packets.Steal:InvokeServer({Uid = closestEgg.Name})
 				end
+				WalkTo(humanoid, Waypoints.SafeArea)
 			end
-			if not Packets.CompleteHatch then
-				local ok, result = pcall(function()
-					return ReplicatedStorage.Packages.Networking["RF/EggWorld/AskFinishHatch"]
-				end)
-				if ok and result then Packets.CompleteHatch = result end
-				if not Packets.CompleteHatch then
-					ok, result = pcall(function()
-						return ReplicatedStorage.Network["Eggs: RequestCompleteHatchEgg"]
-					end)
-					if ok and result then Packets.CompleteHatch = result end
-				end
-			end
-		end
-		if not (Packets.Hatch and Packets.CompleteHatch) then
-			Enableds.Hatch = false
-			Interfaces.HatchToggle:Replace(false)
-		end 
+		end)
 	end
 })
 
 Interfaces.EquipToggle = Window:AddToggle({
-	Name = "Auto Equip Best",
+	Name = "Equip Best",
 	Default = false,
 	Callback = function(v)
 		Enableds.Equip = v
@@ -559,7 +479,7 @@ Window:AddToggle({
 					Interfaces.UpgradeToggle:Replace(false)
 					return
 				end
-				
+
 				if Interfaces.ThreadmillHint and Interfaces.ThreadmillButton then
 					if Interfaces.ThreadmillHint.Enabled then
 						FireButton(Interfaces.ThreadmillButton)
@@ -588,6 +508,91 @@ Window:AddToggle({
 
 	end
 })
+
+--Interfaces.PlaceToggle = Window:AddToggle({
+--	Name = "Auto Place",
+--	Default = false,
+--	Callback = function(v)
+--		Enableds.Place = v
+--		if v then
+--			if not Packets.Place then
+--				local ok, result = pcall(function()
+--					return ReplicatedStorage.Packages.Networking["RF/EggWorld/AskPlaceEgg"]
+--				end)
+--				if ok and result then Packets.Place = result end
+
+--				if not Packets.Place then
+--					ok, result = pcall(function()
+--						return ReplicatedStorage.Network["Eggs: RequestPlaceEgg"]
+--					end)
+--					if ok and result then Packets.Place = result end
+--				end
+--			end
+--			if not Packets.Inventory then
+--				local ok, result = pcall(function()
+--					return ReplicatedStorage.Packages.Networking["RE/EggWorld/OwnerShifted"]
+--				end)
+--				if ok and result then Packets.Inventory = result end
+
+--				if not Packets.Inventory then
+--					ok, result = pcall(function()
+--						return ReplicatedStorage.Network["Eggs: RuntimeOwnerUpdated"]
+--					end)
+--					if ok and result then Packets.Inventory = result end
+--				end
+--			end
+--			if Packets.Inventory and not Connections.Inventory then
+--				Connections.Inventory = Packets.InventoryChanged.OnClientEvent:Connect(function(data)
+--					if data.OwnerUserId == LocalPlayer.UserId then
+--						LastInventory = data.Records
+--					end
+--				end)
+--			end
+--		end
+--		if not (Packets.Place and Packets.Inventory) then
+--			Enableds.Place = false
+--			Interfaces.PlaceToggle:Replace(false)
+--		end
+--	end
+--})
+
+--Interfaces.HatchToggle = Window:AddToggle({
+--	Name = "Auto Hatch",
+--	Default = false,
+--	Callback = function(v)
+--		Enableds.Hatch = v
+--		if v then
+--			if not Packets.Hatch then
+--				local ok, result = pcall(function()
+--					return ReplicatedStorage.Packages.Networking["RF/EggWorld/AskHatch"]
+--				end)
+--				if ok and result then Packets.Hatch = result end
+--				if not Packets.Hatch then
+--					ok, result = pcall(function()
+--						return ReplicatedStorage.Network["Eggs: RequestHatchEgg"]
+--					end)
+--					if ok and result then Packets.Hatch = result end
+--				end
+--			end
+--			if not Packets.CompleteHatch then
+--				local ok, result = pcall(function()
+--					return ReplicatedStorage.Packages.Networking["RF/EggWorld/AskFinishHatch"]
+--				end)
+--				if ok and result then Packets.CompleteHatch = result end
+--				if not Packets.CompleteHatch then
+--					ok, result = pcall(function()
+--						return ReplicatedStorage.Network["Eggs: RequestCompleteHatchEgg"]
+--					end)
+--					if ok and result then Packets.CompleteHatch = result end
+--				end
+--			end
+--		end
+--		if not (Packets.Hatch and Packets.CompleteHatch) then
+--			Enableds.Hatch = false
+--			Interfaces.HatchToggle:Replace(false)
+--		end 
+--	end
+--})
 
 Window:AddLabel({
 	Name = "YouTube: Crokyreo",
