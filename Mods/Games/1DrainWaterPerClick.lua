@@ -48,11 +48,10 @@ if Interfaces.WaterPumpScroll then
 	local sortWaterPumps = {}
 	for _, layer in ipairs(Interfaces.WaterPumpScroll:GetChildren()) do
 		if layer and layer.Parent and layer:IsA("GuiObject") then
-			local frame = layer:FindFirstChild("Sellall")
-			if not frame then continue end
-
-			local buyFrame = frame:FindFirstChild("Sell")
+			local buyFrame = layer:QueryDescendants("#Sellall > #Sell")[1]
 			if not buyFrame then continue end
+			
+			local frame = buyFrame.Parent
 
 			local buyButton = buyFrame:FindFirstChild("go")
 			if not buyButton then continue end
@@ -345,6 +344,15 @@ Window:AddToggle({
 							SuperPivoTo(Character, spawnPoint, rootPart, humanoid.HipHeight)
 							task.wait(0.1)
 							repeat
+								if ProfileData.Amount >= ProfileData.Capacity then
+									if Packets.GoHome then
+										Packets.GoHome:FireServer()
+									else
+										FireButton(Interfaces.HomeButton)
+									end
+									task.wait(1)
+									break
+								end
 								if not (checkPart and checkPart.Parent and checkPart.CanCollide) then break end
 								FirePrompt(prompt)
 								task.wait()
@@ -447,40 +455,39 @@ Window:AddToggle({
 
 		task.spawn(function()
 			while Enableds.Upgrade do
-				for key, active in pairs(UpgradeActives) do
+				for key, list in pairs(UpgradeInfos) do
 					if not Enableds.Upgrade then break end
-					if key == "AllEnabled" then continue end
-					if UpgradeActives.AllEnabled then active = true end
-					if not active then continue end
-					local list = UpgradeInfos[key]
-					if not list then continue end
-					for _, info in ipairs(list) do
-						if not Enableds.Upgrade then break end
-						local button = info.UpgradeButton
-						if button then
-							FireButton(button)
-							task.wait()
+					local active = UpgradeActives[key]
+					if active or UpgradeActives.AllEnabled then
+						for _, info in ipairs(list) do
+							if not Enableds.Upgrade then break end
+							local button = info.UpgradeButton
+							if button then
+								FireButton(button)
+								task.wait()
+							end
 						end
 					end
 					task.wait()
 				end
-				task.wait(0.5)
+				task.wait(1)
 			end
 		end)
 		
 		task.spawn(function()
 			while Enableds.Upgrade do
 				task.wait()
-				if UpgradeActives["Buy Water Pump"] == true or UpgradeActives.AllEnabled == true then
+				if UpgradeActives["Buy Water Pump"] or UpgradeActives.AllEnabled then
 					for _, info in ipairs(WaterPumpInfos) do
 						if not (Enableds.Upgrade) then break end
-						if UpgradeActives["Buy Water Pump"] == false or not UpgradeActives.AllEnabled then break end
-						local equipFrame, unequipFrame = info.EquipFrame, info.UnequipFrame
-						local buyFrame, buyButton = info.BuyFrame, info.BuyButton
-						if buyFrame.Visible == true then
-							if equipFrame and equipFrame.Visible == true then continue end
-							if unequipFrame and unequipFrame.Visible == true then continue end
-							FireButton(buyButton)
+						if UpgradeActives["Buy Water Pump"] or UpgradeActives.AllEnabled then
+							local equipFrame, unequipFrame = info.EquipFrame, info.UnequipFrame
+							local buyFrame, buyButton = info.BuyFrame, info.BuyButton
+							if buyFrame.Visible == true then
+								if equipFrame and equipFrame.Visible == true then continue end
+								if unequipFrame and unequipFrame.Visible == true then continue end
+								FireButton(buyButton)
+							end
 						end
 						task.wait()
 					end
