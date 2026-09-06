@@ -37,7 +37,8 @@ local UpgradeActives = {["AllEnabled"] = true, ["Buy Water Pump"] = false}
 local UpgradeInfos = {}
 
 local ProfileData = {
-	["MaxStage"] = 0
+	["MaxStage"] = 0,
+	["Checkpoint"] = 0
 }
 
 local StageFolder = nil
@@ -94,7 +95,7 @@ if AmountValue and (AmountValue:IsA("NumberValue") or AmountValue:IsA("IntValue"
 	end)
 end
 
-local LevelTarget = ProfileData.Stage or 1
+ProfileData.Checkpoint = ProfileData.Stage or 1
 
 Connections.CharacterAdded = LocalPlayer.CharacterAdded:Connect(function(newCharacter)
 	Character = newCharacter
@@ -159,17 +160,20 @@ for _, v1 in ipairs(workspace:GetChildren()) do
 					if not WorldFishFolder then
 						WorldFishFolder = StageFolder:FindFirstChild("WorldFish")
 					end
-					for _, v3 in ipairs(StageFolder:GetChildren()) do
-						if not (v3 and v3.Parent) then continue end
-						if v3.Name:find("关卡") then
-							ProfileData.MaxStage += 1
-						end
-					end
 					break 
 				end
 			end
 		end
 		if StageFolder then break end
+	end
+end
+
+if StageFolder then
+    for _, v3 in ipairs(StageFolder:GetChildren()) do
+		if not (v3 and v3.Parent) then continue end
+		if v3.Name:find("关卡") then
+			ProfileData.MaxStage += 1
+		end
 	end
 end
 
@@ -259,13 +263,40 @@ Interfaces.ClickToggle = Window:AddToggle({
 	end
 })
 
+Interfaces.RebirthToggle = Window:AddToggle({
+	Text = "Auto Rebirth",
+	Value = false,
+	Callback = function(value)
+		Enableds.Rebirth = value
+		if not Enableds.Rebirth then return end
+		Interfaces.RebirthFrame = Interfaces.RebirthFrame or (Interfaces.MainGui and Interfaces.MainGui:FindFirstChild("Rebirth+1water") and Interfaces.MainGui["Rebirth+1water"]:FindFirstChild("UI1") or nil)
+		if Interfaces.RebirthFrame then
+			Interfaces.RebirthFill = Interfaces.RebirthFill or (Interfaces.RebirthFrame:FindFirstChild("Progress bar") and Interfaces.RebirthFrame["Progress bar"]:FindFirstChild("Internal progress bar") or nil)
+			Interfaces.RebirthButton = Interfaces.RebirthButton or Interfaces.RebirthFrame:QueryDescendants("#RebirthButton > #TextButton")[1]
+		end
+		if not (Interfaces.RebirthFill and Interfaces.RebirthButton) then
+			Enableds.Rebirth = false
+			Interfaces.RebirthToggle:Replace(false)
+			return
+		end
+		task.spawn(function()
+			while Enableds.Rebirth do
+				if Interfaces.RebirthFill.Size.X.Scale >= 1 then
+					FireButton(Interfaces.RebirthButton)
+				end
+				task.wait()
+			end
+		end)
+	end
+})
+
 Window:AddSlider({
 	Text = "Stage",
 	Range = {1, ProfileData.MaxStage > 0 and ProfileData.MaxStage or 1},
-	Value = LevelTarget,
+	Value = ProfileData.Checkpoint,
 	Increment = 1,
 	Callback = function(value)
-		LevelTarget = value
+		ProfileData.Checkpoint = value
 	end
 })
 
@@ -278,12 +309,12 @@ Window:AddToggle({
 		Packets.GoHome = Packets.GoHome or ReplicatedStorage.Remote.Event.Level["[C-S]GoShow"]
 		task.spawn(function()
 			while Enableds.Stage do
-				local level = ProfileData.Stage
-				local levelFolder = StageFolder:FindFirstChild("关卡"..tostring(level))
+				local currentStage = ProfileData.Stage
+				local stageFolder = StageFolder:FindFirstChild("关卡"..tostring(currentStage))
 
-				if levelFolder then
-					local checkPart = levelFolder:FindFirstChild("光门")
-					local surfacePart = levelFolder:FindFirstChild("水面")
+				if stageFolder then
+					local checkPart = stageFolder:FindFirstChild("光门")
+					local surfacePart = stageFolder:FindFirstChild("水面")
 					local humanoid = Character:FindFirstChildOfClass("Humanoid")
 					local rootPart = Character.PrimaryPart or Character:FindFirstChild("HumanoidRootPart")
 
@@ -293,8 +324,9 @@ Window:AddToggle({
 					end
 
 					local lastLevel = ProfileData.Stage - 1
-					if level >= LevelTarget then
+					if level >= ProfileData.Checkpoint then
 						task.wait(0.3)
+								
 						local sortFishs = {}
 
 						if WorldFishFolder then
@@ -322,7 +354,7 @@ Window:AddToggle({
 							end
 						end
 
-						if not Enableds.Stage then break end
+						if not Enableds.Stage then table.clear(sortFishs) break end
 
 						table.sort(sortFishs, function(a, b)
 							return a.Tier > b.Tier
@@ -342,7 +374,7 @@ Window:AddToggle({
 							end
 							local spawnPoint, prompt = info.SpawnPoint, info.Prompt
 							SuperPivoTo(Character, spawnPoint, rootPart, humanoid.HipHeight)
-							task.wait(0.1)
+							task.wait(0.5)
 							repeat
 								if ProfileData.Amount >= ProfileData.Capacity then
 									if Packets.GoHome then
@@ -363,7 +395,7 @@ Window:AddToggle({
 					end
 				end
 
-				task.wait(0.5)
+				task.wait(1)
 			end
 		end)
 	end
@@ -413,7 +445,7 @@ Interfaces.CashToggle = Window:AddToggle({
 })
 
 Interfaces.EquipToggle = Window:AddToggle({
-	Text = "Equip Best",
+	Text = "Equip Best Fish",
 	Value = false,
 	Callback = function(value)
 		Enableds.Equip = value
@@ -498,33 +530,6 @@ Window:AddToggle({
 	end
 })
 
-Interfaces.RebirthToggle = Window:AddToggle({
-	Text = "Auto Rebirth",
-	Value = false,
-	Callback = function(value)
-		Enableds.Rebirth = value
-		if not Enableds.Rebirth then return end
-		Interfaces.RebirthFrame = Interfaces.RebirthFrame or (Interfaces.MainGui and Interfaces.MainGui:FindFirstChild("Rebirth+1water") and Interfaces.MainGui["Rebirth+1water"]:FindFirstChild("UI1") or nil)
-		if Interfaces.RebirthFrame then
-			Interfaces.RebirthFill = Interfaces.RebirthFill or (Interfaces.RebirthFrame:FindFirstChild("Progress bar") and Interfaces.RebirthFrame["Progress bar"]:FindFirstChild("Internal progress bar") or nil)
-			Interfaces.RebirthButton = Interfaces.RebirthButton or Interfaces.RebirthFrame:QueryDescendants("#RebirthButton > #TextButton")[1]
-		end
-		if not (Interfaces.RebirthFill and Interfaces.RebirthButton) then
-			Enableds.Rebirth = false
-			Interfaces.RebirthToggle:Replace(false)
-			return
-		end
-		task.spawn(function()
-			while Enableds.Rebirth do
-				if Interfaces.RebirthFill.Size.X.Scale >= 1 then
-					FireButton(Interfaces.RebirthButton)
-				end
-				task.wait()
-			end
-		end)
-	end
-})
-
 Interfaces.SellToggle = Window:AddToggle({
 	Text = "Auto Sell",
 	Value = false,
@@ -540,7 +545,7 @@ Interfaces.SellToggle = Window:AddToggle({
 		task.spawn(function()
 			while Enableds.Sell do
 				Packets.SellAll:InvokeServer()
-				task.wait(1)
+				task.wait(3)
 			end
 		end)
 	end
