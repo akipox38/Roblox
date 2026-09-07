@@ -10,14 +10,14 @@ local LocalPlayer = Players.LocalPlayer
 local PlayerGui = LocalPlayer:FindFirstChildOfClass("PlayerGui")
 local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
 
-local Enableds = {["Click"] = false, ["Upgrade"] = false, ["Cash"] = false, ["Stage"] = false, ["Sell"] = false, ["Rebirth"] = false, ["Equip"] = false}
+local Enableds = {["Click"] = false, ["Upgrade"] = false, ["Cash"] = false, ["Stage"] = false, ["Sell"] = false, ["Rebirth"] = false, ["Equip"] = false, ["Code"] = false}
 local Connections = {}
 
 local ClickIndex = 0
 local WaterPumpInfos = {}
 local Packets = {}
 
-local Interfaces={
+local Interfaces = {
 	["MainGui"] = PlayerGui:FindFirstChild("Main"),
 	["HomeButton"] = PlayerGui:QueryDescendants("#HUD > #Main > #Top > #GoShow > #TextButton")[1],
 	["UpgradeScroll"] = PlayerGui:QueryDescendants("#Main > #Upgrades > #Main > #ScrollingFrame")[1],
@@ -40,6 +40,13 @@ local ProfileData = {
 	["MaxStage"] = 0,
 	["Checkpoint"] = 0
 }
+
+local CodeTypes = {
+   "WaterHappy", "Cthulhu", "MythicFish", "Fixed1", "Fixed2", "Spin10", "AdminAquarium", "CDraw", "Hermes"
+}
+
+
+Packets.RedeemCode = ReplicatedStorage:QueryDescendants("#CdkRewardFuntion > #isPlayerUseCdkRequest")[1]
 
 local StageFolder = nil
 local WorldFishFolder = nil
@@ -580,6 +587,27 @@ Interfaces.SellToggle = Window:AddToggle({
 				task.wait(3)
 			end
 		end)
+	end
+})
+
+Interfaces.CodeDropdown = Window:AddDropdown({
+	Text = "Upgrade Type",
+	Options = #CodeTypes > 0 and CodeTypes or {"No Code"},
+	Option = nil,
+	Multi = true,
+	Callback = function(option) end
+})
+
+Window:AddButton({
+	Text = "Redeem Code",
+	MethodType = "DebounceClick",
+	Callback = function() 
+		if Packets.RedeemCode then
+			for _, code in ipairs(CodeTypes) do
+				Packets.RedeemCode:InvokeServer(code)
+				task.wait(0.1)
+			end
+		end
 	end
 })
 
