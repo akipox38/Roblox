@@ -594,7 +594,7 @@ Interfaces.CodeDropdown = Window:AddDropdown({
 	Text = "Code List",
 	Options = #CodeTypes > 0 and CodeTypes or {"No Code"},
 	Option = nil,
-	Multi = false,
+	Multi = true,
 	Callback = function(option) end
 })
 
