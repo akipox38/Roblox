@@ -42,7 +42,7 @@ local ProfileData = {
 }
 
 local CodeTypes = {
-   "WaterHappy", "Cthulhu", "MythicFish", "Fixed1", "Fixed2", "Spin10", "AdminAquarium", "CDraw", "Hermes"
+   "WaterHappy", "Cthulhu", "MythicFish", "Fixed1", "Fixed2", "Spin10", "AdminAquarium", "CDraw", "Hermes", "CCoins"
 }
 
 
@@ -594,7 +594,7 @@ Interfaces.CodeDropdown = Window:AddDropdown({
 	Text = "Upgrade Type",
 	Options = #CodeTypes > 0 and CodeTypes or {"No Code"},
 	Option = nil,
-	Multi = true,
+	Multi = false,
 	Callback = function(option) end
 })
 
