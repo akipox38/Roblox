@@ -591,7 +591,7 @@ Interfaces.SellToggle = Window:AddToggle({
 })
 
 Interfaces.CodeDropdown = Window:AddDropdown({
-	Text = "Upgrade Type",
+	Text = "Code List",
 	Options = #CodeTypes > 0 and CodeTypes or {"No Code"},
 	Option = nil,
 	Multi = false,
