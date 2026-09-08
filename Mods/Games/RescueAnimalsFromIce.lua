@@ -287,12 +287,15 @@ Window:AddToggle({
 								task.wait()
 							until not (Enableds.Rescue and iceCube.Parent)
 									
+							if pickupPrompt then
+								FirePrompt(pickupPrompt)
+								task.wait(0.2)
+							end
+									
 							if Packets.PickupAnimal then
                                Packets.PickupAnimal:InvokeServer("1",key)
-							elseif pickupPrompt then
-								FirePrompt(pickupPrompt)
 							end
-							task.wait(0.1)
+						
 						end
 
 						task.wait(0.1)
@@ -492,29 +495,6 @@ Window:AddToggle({
 		end)
 	end
 })
-
---[[
-Interfaces.SellToggle = Window:AddToggle({
-	Text = "Auto Sell",
-	Value = false,
-	Visible = true,
-	Callback = function(value)
-		Enableds.Sell = value
-		if not Enableds.Sell then return end
-		if not Packets.Sell then
-			Enableds.Sell = false
-			Interfaces.SellToggle:Replace(false)
-			return
-		end
-		task.spawn(function()
-			while Enableds.Sell do
-				Packets.Sell:InvokeServer()
-				task.wait(1)
-			end
-		end)
-	end
-})
-]]
 
 Interfaces.CodeDropdown = Window:AddDropdown({
 	Text = "Code List",
