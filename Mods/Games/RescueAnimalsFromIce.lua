@@ -1,1 +1,535 @@
-return(function(...)local E={"\097\110\086\109\057\114\056\122\097\086\061\061","\051\116\080\066\098\120\074\079\112\101\103\070\112\068\119\098\055\113\071\061","\055\079\090\050\057\070\103\115\089\068\109\108\057\102\061\061";"\067\074\072\053\111\113\112\122\086\113\088\122\078\075\087\085\114\105\069\111\053\118\086\098\048\113\090\087\083\071\084\054\108\077\069\086\051\053\050\052\049\103\049\089\087\043\102\108\083\082\075\121\098\049\055\088\103\102\047\084\069\089\112\099\086\087\055\088\114\053\112\103\043\053\052\116\085\081\114\071\104\052\110\074\118\109\070\087\097\055\057\120\119\056\098\122\074\084\097\082\056\102\071\111\079\080\080\070\065\047\084\051","\089\068\106\108\057\079\090\066","\120\079\105\067\083\115\071\119\084\113\122\069\048\113\083\120\101\068\102\061";"\112\070\100\115\089\113\083\109\083\117\061\061","\083\101\080\102\098\101\103\081","\049\119\090\066\057\049\100\050\083\079\106\110\055\079\120\061","\089\067\100\052\048\101\080\088";"\055\068\119\116\097\084\077\076\083\079\111\076\057\088\057\048","\098\072\090\108\098\072\106\115";"\083\079\090\082\083\070\074\122\055\068\089\061","\055\078\073\061";"\089\068\051\066\055\067\057\109","\103\051\109\104\118\113\111\081\118\068\122\072\100\113\119\047\097\051\117\061","\047\084\086\102\048\101\111\100\047\101\098\119\101\078\077\097\089\086\061\061","\083\079\090\108\083\101\119\110\057\049\073\061";"\098\088\109\115\057\047\061\061";"\047\068\111\110\055\051\057\098\083\120\080\114\112\088\107\071\118\113\102\061","\083\079\106\110\055\079\120\061","\057\067\103\119\098\086\061\061";"\098\049\106\112\107\072\111\101\089\113\083\108\097\101\057\072","\083\070\109\113\055\116\086\072\057\067\047\080\055\082\109\078";"\098\101\083\106\097\078\057\070\103\068\050\072\084\116\119\115\089\047\061\061","\051\049\100\120\118\116\106\105\107\101\080\052\103\084\100\114";"\051\079\106\066\089\079\051\052\073\113\100\109\083\079\051\075\083\079\051\116\073\047\061\061","\057\072\119\050\083\079\103\056";"\055\078\113\061";"\057\049\074\052\055\067\073\061","\089\072\051\115\055\101\051\115\098\049\100\050\098\068\111\109","\089\079\103\050\055\079\102\061","\098\072\050\050\089\086\061\061","\055\101\106\115\048\117\061\061";"\083\084\107\072\083\120\109\099\107\072\103\119\089\068\090\098\120\102\061\061","\084\079\100\119\100\113\122\088\057\119\050\102\120\082\100\119\103\047\061\061","","\101\070\100\067\103\116\116\102\101\120\100\049\120\119\100\072\112\067\089\061","\057\072\106\066\057\047\061\061","\098\051\098\119\055\079\119\115\051\084\103\109\051\119\120\080\112\102\061\061";"\049\119\090\088\098\102\061\061","\097\079\122\107\047\109\051\097\051\120\074\098\083\106\109\048\118\117\061\061";"\097\086\061\061","\049\119\090\122\055\068\100\109\118\117\061\061";"\055\079\051\108";"\049\119\090\105\057\101\071\061";"\057\068\111\043\055\067\073\061"}local function g(g)return E[g+(435253-374710)]end for g,s in ipairs({{138450-138449,7405+-7358};{-107385+107386;582954+-582924};{674478+-674447;602115-602068}})do while s[-237214-(-237215)]<s[-724559+724561]do E[s[-564056-(-564057)]],E[s[-494314+494316]],s[-952862+952863],s[144951-144949]=E[s[603131-603129]],E[s[1034701+-1034700]],s[795654+-795653]+(-676063-(-676064)),s[-675676+675678]-(849951+-849950)end end do local g=E local s=type local P=string.sub local Q={v=-799667-(-799697),B=-691292-(-691337);m=-219889+219926,d=-563516+563533,D=-878647-(-878685),["\054"]=1003782+-1003722;C=740543+-740488,Y=-180926-(-180954);P=-582737-(-582794),Q=-988838+988881;l=619105-619059;A=635968-635937,["\057"]=290776+-290751;J=729358+-729349,L=-159187-(-159202);["\056"]=-772212-(-772252),h=823705-823647,U=614851+-614789,p=604004-603986;n=128798+-128764;["\055"]=-609175+609202;["\048"]=-275827+275853;N=-862826-(-862829),T=817747-817728,c=-172994+173004,b=-974423-(-974447),S=-918041+918070,W=-577934+577997;o=879590-879541,s=96855-96803,f=80701+-80653;a=-151609-(-151623);X=233064+-233025;r=-717266+717268,H=655555+-655501;K=-509402+509437,["\053"]=-664288-(-664330);w=-33432+33485,["\050"]=83797+-83764;V=744621-744589;["\047"]=399108+-399092,y=465714-465655,F=-100563+100570,G=-405042+405098,M=260974+-260973;g=-310172-(-310185),Z=898244+-898183,j=745309+-745304;["\052"]=801824-801774,q=-539719-(-539723);x=-844429-(-844449);E=-365040-(-365051),["\049"]=-1030615+1030638;k=-214088+214100,R=-67814-(-67865);e=971563-971541;i=-253408-(-253452),O=766085-766079;["\051"]=-136662-(-136683);z=146324+-146283;["\043"]=484928+-484881;t=-263247-(-263283),I=102492+-102484;u=304876-304876}local u=string.len local k=table.insert local i=table.concat local C=string.char local V=math.floor for E=-927333-(-927334),#g,483947+-483946 do local U=g[E]if s(U)=="\115\116\114\105\110\103"then local s=u(U)local W={}local Z=-909806+909807 local S=-150791-(-150791)local B=392826+-392826 while Z<=s do local E=P(U,Z,Z)local g=Q[E]if g then S=S+g*(-263957+264021)^((-306228+306231)-B)B=B+(584322-584321)if B==-557624+557628 then B=-805299-(-805299)local E=V(S/(-443284+508820))local g=V((S%(510431+-444895))/(-772451-(-772707)))local s=S%(-258361-(-258617))k(W,C(E,g,s))S=-1001399+1001399 end elseif E=="\061"then k(W,C(V(S/(-549783+615319))))if Z>=s or P(U,Z+(902469+-902468),Z+(-762486+762487))~="\061"then k(W,C(V((S%(857379-791843))/(-155455-(-155711)))))end break end Z=Z+(-869932+869933)end g[E]=i(W)end end end return(function(E,P,Q,u,k,i,C,K,v,d,s,V,X,h,m,I,S,U,B,W,Z)d,X,s,I,W,B,m,K,S,v,Z,h,U,V=function(E,g)local P=S(g)local Q=function(Q,u,k,i,C)return s(E,{Q;u,k;i,C},g,P)end return Q end,function(E,g)local P=S(g)local Q=function(Q,u,k,i)return s(E,{Q,u,k;i},g,P)end return Q end,function(s,Q,u,k)local T,A,m,J,D,B,w,N,R,Z,e,j,C,b,p,r,U,S,O,Y,M,y,z,H,q,t,F,l,o,f,a,c,x,G while s do if s<8475675-(-211495)then if s<4068409-(-877625)then if s<-845834+3170769 then if s<1294701-279049 then if s<746912+-263306 then if s<918043+-796412 then if s<263201-221311 then J=W()f=K(725093+10406784,{})V[J]=C s=V[H]e=-767477+767480 y=-334271-(-334336)C=s(e,y)e=W()s=576376+-576376 a=g(-715416+654888)V[e]=C C=E[a]y=s a={C(f)}C=-810662+810664 s=812593+-812593 z=s s={P(a)}a=s s=a[C]x=g(-458432+397932)C=g(-629750+569208)f=s s=E[C]b=V[S]T=E[x]x=T(f)T=g(-887199+826687)G=b(x,T)b={G()}C=s(P(b))b=W()V[b]=C G=V[e]T=G s=2822620-(-956956)G=1041837-1041836 C=-1017295+1017296 x=G G=-779508-(-779508)c=x<G G=C-x else p=729271+-729270 s=4954163-(-510957)A=N[p]R=A end else C={}s=true V[u[-256418-(-256419)]]=s s=E[g(-945170+884634)]end else if s<-461641+1161676 then Y=W()l=g(481007+-541533)V[Y]=G w=350900+-350800 C=E[l]l=g(563440-623948)s=C[l]j=584487-584232 l=-518561-(-518562)q=-903344-(-903345)C=s(l,w)l=W()V[l]=C s=V[H]w=-668526+668526 C=s(w,j)r=-230105+240105 w=W()j=184211-184210 V[w]=C s=V[H]F=V[l]N=326681+-326679 C=s(j,F)j=W()V[j]=C C=V[H]F=C(q,N)C=-620145+620146 s=F==C p=g(-411091-(-350591))N=g(-764028-(-703511))F=W()t=-353582+353582 C=g(872677+-933189)V[F]=s A=E[p]s=g(732968-793506)s=f[s]o=V[H]D={o(t,r)}p=A(P(D))A=g(-372519+312002)R=p..A q=N..R N=g(90659-151187)s=s(f,C,q)q=W()R=h(-768465+4204178,{H,Y;e;S,Z,b,F;q,l;j,w;J})V[q]=s C=E[N]N={C(R)}s={P(N)}N=s s=V[F]s=s and-683649+3461334 or 96242+6242934 else s=E[g(582669-643204)]C={}end end else if s<-886701+2480093 then if s<956310+392732 then s=d(-843909+3179291,{B})T={s()}s=E[g(815056+-875580)]C={P(T)}else C=-778926+13458544 Z=g(578351-638848)S=13131989-(-235506)U=Z^S s=C-U C=g(677906+-738440)U=s s=C/U C={s}s=E[g(-415157-(-354632))]end else if s<136148+1848020 then s=true s=1823431-731051 else Y=g(-477609-(-417078))x=g(-1067307-(-1006807))s=E[x]c=E[Y]x=s(c)s=g(21800+-82299)E[s]=x s=13546352-(-862132)end end end else if s<640384+2531032 then if s<1045238+1791781 then if s<1978009-(-746083)then if s<476523+2086852 then s=11607108-307903 else S=404552-404552 U=g(-842571+782041)s=E[U]Z=V[u[-529870+529878]]U=s(Z,S)s=15921344-794368 end else R=V[Z]C=R s=R and 10732706-(-53994)or 8493120-(-229653)end else if s<291442+2687244 then b=-447879+447880 c=#a w=-931503-(-931504)s=8012887-352442 f=B(b,c)b=M(a,f)c=V[z]f=nil l=b-w Y=H(l)c[b]=Y b=nil else Z=V[u[-941561+941563]]S=V[u[-706628-(-706631)]]s=7153384-(-567437)U=Z==S C=U end end else if s<4114204-137603 then if s<498508+3077348 then Z=V[u[-992228+992229]]B=-957802-(-957803)m=706665-706663 S=Z(B,m)Z=-927510+927511 U=S==Z s=U and 7478173-(-242648)or 4063997-1009113 C=U else G=G+x Y=not c C=G<=T C=Y and C Y=G>=T Y=c and Y C=Y or C Y=-1020230+1718011 s=C and Y C=8704938-449293 s=s or C end else if s<4321994-(-229449)then C=R s=A s=8839363-116590 else U=nil V[u[-765287+765292]]=C s=-392867+16766168 end end end end else if s<6902625-(-704602)then if s<-378365+6662982 then if s<5427747-(-369319)then if s<5682417-140199 then if s<4924710-(-515724)then s=E[g(-793604+733064)]C={}else t=-219117-(-219118)V[Z]=R D=V[j]o=D+t p=N[o]A=y+p p=553453-553197 s=A%p y=s o=V[w]s=10817225-1021587 p=z+o o=-342113+342369 A=p%o z=A end else U=V[u[629573-629572]]C=#U U=593993-593993 s=C==U s=s and-573687+6435001 or 831018+8263903 end else if s<-189255+6118236 then S=687649+-687512 Z=V[u[829627+-829625]]U=Z*S Z=34510845526626-902045 C=U+Z U=-682577+35184372771409 s=C%U V[u[663200-663198]]=s U=V[u[890372-890369]]s=7228108-(-150075)Z=224576-224575 C=U~=Z else s=true s=s and-106206+15709224 or 1729483-637103 end end else if s<-202444+7300827 then if s<36719+6817501 then A=V[Z]R=A s=A and-368363+440736 or 464202+5000918 else S=V[u[-476535-(-476541)]]s=4403962-(-371012)Z=S==U C=Z end else if s<6260849-(-1038584)then c=g(343214-403713)s=E[c]c=g(-506966-(-446435))E[c]=s s=-416592+14825076 else Z=V[u[217629+-217626]]S=-498633+498661 U=Z*S Z=-881480+881737 s=-1047874+16409264 C=U%Z V[u[756509+-756506]]=C end end end else if s<1736+8018201 then if s<719113+7050592 then if s<7710817-30567 then if s<-290289+7943755 then S=-893042-(-893074)Z=V[u[598209+-598206]]U=Z%S B=V[u[265854-265850]]y=587575-587562 H=V[u[-548653+548655]]f=V[u[-362904+362907]]a=f-U J=141926-141924 f=990966-990934 z=a/f e=y-z O=J^e M=H/O m=B(M)s=8947693-(-147228)B=4295187790-220494 S=m%B m=566661+-566659 O=434788+-434787 B=m^U Z=S/B B=V[u[-1030927-(-1030931)]]H=Z%O O=4294533670-(-433626)M=H*O m=B(M)B=V[u[621360+-621356]]M=B(Z)U=nil S=m+M m=539846-474310 B=S%m M=S-B H=308459-242923 J=-341615-(-341871)m=M/H H=-593809-(-594065)M=B%H O=B-M H=O/J J=384724-384468 O=m%J y=60285+-60029 S=nil e=m-O J=e/y e={M;H;O,J}B=nil Z=nil M=nil H=nil m=nil J=nil O=nil V[u[-769199-(-769200)]]=e else c=-431519+431519 b=#a f=b==c s=f and 15197369-(-476374)or 689301+2236135 end else s=C and 8503622-(-1003365)or 16757863-384562 end else if s<8462352-477291 then M=C H=g(-817532-(-757006))O=g(868936-929475)C=E[H]z=g(-534215+473676)H=g(337761+-398269)s=C[H]H=W()V[H]=s C=E[O]O=g(-443510+383009)s=C[O]e=s O=s y=E[z]J=y s=y and 259120+8667542 or 13275223-50710 else e=g(285277+-345782)J=E[e]s=-1027802+1063959 C=J end end else if s<9095007-946477 then if s<8998998-928349 then a=not z e=e+y O=e<=J O=a and O a=e>=J a=z and a O=a or O a=-709147+11653316 s=O and a O=8667955-287299 s=s or O else B=v(B)H=v(H)m=v(m)y=nil b=v(b)Z=v(Z)z=nil J=v(J)f=nil s=15910114-54160 S=v(S)H=g(-616315+555789)O=nil y={}Z=nil e=v(e)O=g(-939742+879203)M=nil b=-683690-(-683946)a=nil M=g(-625851+565325)m=E[M]S=nil M=g(168520-229033)B=m[M]m=W()V[m]=B M=E[H]H=g(-647984-(-587476))B=M[H]H=E[O]O=g(846583+-907081)M=H[O]c=b e=W()J=g(-50864-9639)b=399228-399227 O=E[J]J=g(-259200-(-198673))f=-384988+384989 H=O[J]J=W()Y=b O=-676473+676473 V[J]=O O=-307655-(-307657)V[e]=O z=W()O={}a={}b=-471757-(-471757)l=Y<b b=f-Y V[z]=y y=1000094+-1000094 end else if s<8133214-(-148898)then T=V[Z]G=T s=T and 8833906-(-79006)or 14545661-(-653689)else B=nil s=-936011+9878147 H=nil M=nil end end end end end else if s<10894662-(-811249)then if s<9074362-(-757442)then if s<8500483-(-693596)then if s<9248084-309245 then if s<-230429+9150588 then if s<7739135-(-1039983)then s=9513233-(-282405)V[Z]=C else T=y==z s=1017239+14182111 G=T end else a=g(-276524-(-215985))z=E[a]a=g(-280368+219863)y=z[a]s=587260+12637253 J=y end else if s<8120866-(-835467)then s=E[g(611149+-671645)]C={Z}else S=g(-171455+110916)Z=E[S]s=E[g(560868-621388)]S=g(494442-554940)U=Z[S]S=V[u[-524698+524699]]Z={U(S)}C={P(Z)}end end else if s<625657+9120526 then if s<186481+9319866 then x=-861533+861534 s=V[H]c=-270361+270367 T=s(x,c)c=g(-961316-(-900817))s=g(-589993+529494)E[s]=T x=E[c]c=-478716-(-478718)s=x>c s=s and-669261+2737980 or-120599+7245878 else B=g(-512575-(-452075))C=g(-1030848-(-970306))s=E[C]O=g(174714+-235242)J=K(-893303+2315900,{})U=V[u[-679421+679425]]S=E[B]H=E[O]O={H(J)}M={P(O)}H=1048009-1048007 m=M[H]B=S(m)S=g(71962-132474)Z=U(B,S)U={Z()}C=s(P(U))Z=V[u[-182086+182091]]U=C s=Z and-164327+7044502 or-559416+5334390 C=Z end else if s<403641+9387077 then s=V[u[-919514+919524]]Z=V[u[-396536-(-396547)]]U[s]=Z s=V[u[21599-21587]]Z={s(U)}C={P(Z)}s=E[g(-146159+85637)]else w=v(w)l=v(l)F=v(F)s=-894723+4674299 N=nil q=v(q)Y=v(Y)j=v(j)end end end else if s<-859144+11826991 then if s<-486313+11105974 then if s<11331908-949181 then if s<9318019-(-1027226)then H=not M S=S+m Z=S<=B Z=H and Z H=S>=B H=M and H Z=H or Z H=12249837-321188 s=Z and H Z=10523934-759362 s=s or Z else s=7321308-(-783717)end else M=V[m]s=-899161+8798520 C=M end else if s<11291976-441726 then A=s D=-225499+225500 o=N[D]D=false p=o==D s=p and 15270296-(-91866)or-772312+4910249 R=p else x=g(-486663-(-426160))T=E[x]x=g(-272001-(-211460))G=T[x]O=e T=G(U,O)G=V[u[96977-96971]]x=G()b=T+x f=b+M O=nil b=420702-420446 a=f%b x=-963537-(-963538)M=a b=S[Z]T=M+x G=B[T]f=b..G S[Z]=f s=-298444+8319318 end end else if s<-281104+11556407 then if s<11115871-14083 then U=Q m=W()H=g(-694683-(-634155))s=true Z=W()V[Z]=s S=g(-45876+-14627)C=E[S]S=g(237936+-298468)s=C[S]B=W()S=W()V[S]=s O=K(-204160+533835,{m})s=I(152649+11586338,{})V[B]=s s=false V[m]=s M=E[H]H=M(O)C=H s=H and 164288+10314704 or 7458595-(-440764)else C=-737205+10259978 S=3908820-165902 Z=g(-391107+330605)U=Z^S s=C-U C=g(-946411-(-885893))U=s s=C/U C={s}s=E[g(26167+-86678)]end else if s<12674163-1004814 then s=true s=s and 16744642-859678 or-288529+5392623 else f=b w=f s=-121766+15977720 a[f]=w f=nil end end end end else if s<379174+14804889 then if s<14099854-881191 then if s<613927+11412475 then if s<11690485-(-203511)then if s<945164+10829283 then C=g(407077+-467607)s=E[C]U=g(868879+-929412)C=s(U)s=E[g(663052-723589)]C={}else b=#a c=-923409-(-923409)s=958688+1966748 f=b==c end else s=V[u[-925128-(-925129)]]O=895736+-895736 J=-465650+465905 Z=S H=s(O,J)s=9423163-(-420710)U[Z]=H Z=nil end else if s<222981+12685114 then s=true s=s and 9844970-344895 or-858303+1624329 else s=V[u[542989-542988]]U=Q[696207-696206]S=s Z=Q[777387-777385]s=S[Z]s=s and 948395+12414520 or 874879+15171163 end end else if s<705642+12672530 then if s<12619299-(-738296)then s=e s=J and-341483-(-377640)or-842140+8849497 C=J else s=8558907-(-383229)end else if s<386121+14476155 then s=-856051+12896504 else s={}Z=459697-459696 S=V[u[-832523-(-832532)]]U=s B=S S=361246+-361245 m=S S=193885-193885 M=m<S s=-735909+10579782 S=Z-m end end end else if s<15291251-(-529744)then if s<-742173+16164645 then if s<14401030-(-960533)then if s<14903409-(-299159)then V[Z]=G s=V[Z]s=s and 11396028-1045246 or 1034289-(-945279)else S=413827+-413826 Z=V[u[-499649+499652]]U=Z~=S s=U and 648796+6971398 or 6792875-(-585308)end else D=-771066+771068 o=N[D]D=V[q]s=3434764-(-703173)p=o==D R=p end else if s<15912388-257693 then s=432706+11607747 else f={}b=W()l=g(-753337+692808)O=nil N=g(932517-993021)p=nil V[b]=f y=nil Y=W()f=W()w={}c=d(-187455+5785390,{b,J;e,m})V[f]=c F=g(-650983+590467)c={}a=nil V[Y]=c M=nil m=v(m)c=E[l]q=V[Y]C={}j={[F]=q,[N]=p}l=c(w,j)c=X(13744490-626209,{Y,b;z,J;e;f})m=g(120034+-180544)f=v(f)Z=l y=546667+8622355249220 s=E[g(352691-413198)]Y=v(Y)z=v(z)S=c H=nil J=v(J)H=g(-75296+14775)B=nil B=E[m]e=v(e)b=v(b)e=g(164125-224634)M=E[H]J=S(e,y)O=Z[J]J=g(-568596-(-508090))S=nil J=M[J]Z=nil H={J(M,O)}m=B(P(H))B=m()end end else if s<247930+15793740 then if s<16599654-736024 then b=b+Y w=not l f=b<=c f=w and f w=b>=c w=l and w f=w or f w=12411093-735749 s=f and w f=967577+10827380 s=s or f else U=g(949517-1010048)C=g(-546326-(-485827))s=E[C]C=E[U]U=g(-611364-(-550833))E[U]=s s=-623829+11923034 U=g(-619106+558607)E[U]=C U=V[u[-346764-(-346765)]]Z=U()end else if s<16793383-577952 then m=-846212+35184372935044 s={}V[u[-568876-(-568878)]]=s C=V[u[-62604-(-62607)]]H=-320038+320293 B=C C=Z%m V[u[453990+-453986]]=C M=Z%H H=-139893-(-139895)O=g(-852523+792020)m=M+H V[u[123730+-123725]]=m H=E[O]O=g(587108-647623)M=H[O]H=M(U)s=-229360+8250234 M=g(853913+-914436)S[Z]=M M=271884+-271816 e=-963513+963514 O=-304683-(-304684)y=e e=624945-624945 J=H z=y<e e=O-y else s=V[u[937348-937341]]s=s and 697862+1942043 or 15751202-624226 end end end end end end end s=#k return P(C)end,function(E,g)local P=S(g)local Q=function(Q,u,k)return s(E,{Q,u;k},g,P)end return Q end,function()Z=(-510820+510821)+Z U[Z]=432305+-432304 return Z end,function(E)local g,s=-181031-(-181032),E[891320-891319]while s do U[s],g=U[s]-(252-251),(305625+-305624)+g if U[s]==-589936+589936 then U[s],V[s]=nil,nil end s=E[g]end end,function(E,g)local P=S(g)local Q=function(...)return s(E,{...},g,P)end return Q end,function(E,g)local P=S(g)local Q=function(Q,u)return s(E,{Q;u},g,P)end return Q end,function(E)for g=963716+-963715,#E,920151+-920150 do U[E[g]]=U[E[g]]+(926758-926757)end if Q then local s=Q(true)local P=k(s)P[g(980424+-1040940)],P[g(-978416-(-917897))],P[g(-676305-(-615791))]=E,B,function()return 156814+-2303619 end return s else return u({},{[g(810281-870800)]=B,[g(28776-89292)]=E;[g(-603578-(-543064))]=function()return 716943+-2863748 end})end end,function(E)U[E]=U[E]-(-960391-(-960392))if U[E]==502435+-502435 then U[E],V[E]=nil,nil end end,-565431-(-565431),function(E,g)local P=S(g)local Q=function()return s(E,{},g,P)end return Q end,{},{}return(m(10842987-(-170829),{}))(P(C))end)(getfenv and getfenv()or _ENV,unpack or table[g(-176331+115826)],newproxy,setmetatable,getmetatable,select,{...})end)(...)
+local UI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Crokier/Roblox/main/Packages/Sampluy/init.luau"))()
+
+local Services = setmetatable({}, {__index = function(_, i) return cloneref and cloneref(game:GetService(i)) or game:GetService(i) end})
+local Players = Services.Players
+local ReplicatedStorage = Services.ReplicatedStorage
+
+local LocalPlayer = Players.LocalPlayer
+local PlayerGui = LocalPlayer:FindFirstChildOfClass("PlayerGui")
+local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+
+local Enableds = {["Upgrade"] = false, ["Cash"] = false, ["Rescue"] = false, ["Sell"] = false, ["Rebirth"] = false, ["Place"] = false}
+
+local Connections = {}
+
+Connections.CharacterAdded = LocalPlayer.CharacterAdded:Connect(function(char)
+	Character = char
+end)
+
+local Packets = {
+	["RedeemCode"] = ReplicatedStorage:QueryDescendants("#Library > #Knit >> #Services > #CodeService > #RF > #TryRedeem")[1],
+	["Sell"] = ReplicatedStorage:QueryDescendants("#Library > #Knit >> #Services > #ItemService > #RF > #TrySell")[1],
+	["Rebirth"] = ReplicatedStorage:QueryDescendants("#Library > #Knit >> #Services > #RebirthService > #RF > #TryRebirth")[1],
+	["UpgradeAnimal"] = ReplicatedStorage:QueryDescendants("#Library > #Knit >> #Services > #SlotService > #RF > #TryUpgradeItem")[1],
+	["Upgrade"] = ReplicatedStorage:QueryDescendants("#Library > #Knit >> #Services > #UpgradeService > #RF > #TryUpgrade")[1],
+	["PurchaseBoost"] = ReplicatedStorage:QueryDescendants("#Library > #Knit >> #Services > #BoostService > #RF > #TryPurchase")[1],
+	["PlaceBest"] = ReplicatedStorage:QueryDescendants("#Library > #Knit >> #Services > #SlotService > #RF > #TryPlaceBest")[1],
+	["CollectCash"] = ReplicatedStorage:QueryDescendants("#Library > #Knit >> #Services > #SlotService > #RF > #TryCollectCurrency")[1],
+	["PurchasePickaxe"] = ReplicatedStorage:QueryDescendants("#Library > #Knit >> #Services > #PickaxeService > #RF > #TryPurchase")[1]
+	-- Library.Knit.Knit.Services
+}
+
+local Interfaces = {
+	["PickaxeScroll"] = PlayerGui:QueryDescendants("#PickaxeShop > #Frame > #Container")[1],
+	["FoodScroll"] = PlayerGui:QueryDescendants("#BoostShop > #Frame > #Container")[1],
+	["AnimalScroll"] = PlayerGui:QueryDescendants("#StoredItems > #Frame > #Container")[1],
+	["UpgradeScroll"] = PlayerGui:QueryDescendants("#Upgrades > #Frame > #Upgrades")[1]
+}
+
+local TypesData = {
+	["Code"] = {"DISCO"},
+	["Upgrade"] = {"Upgrade", "Animal", "Buy Pickaxe", "Buy Food"},
+	["Names"] = {},
+	["Raritys"] = {},
+	["Mutations"] = {"Golden", "Diamond", "Rainbow"}
+}
+
+local ActivesData = {
+	["Names"] = {},
+	["Raritys"] = {},
+	["Mutations"] = {["Golden"] = false, ["Diamond"] = false, ["Rainbow"] = false}
+}
+
+local InfosData = {
+	["Pickaxe"] = {},
+	["Food"] = {},
+	["Upgrade"] = {}
+}
+
+local AnimalMode = 1
+local UpgradeActives = {["Upgrade"] = false, ["Animal"] = false, ["Buy Pickaxe"] = false, ["Buy Food"] = false}
+
+if Interfaces.PickaxeScroll then
+	local sortPickaxes = {}
+
+	for _, layer in ipairs(Interfaces.PickaxeScroll:GetChildren()) do
+		if layer and layer.Parent and layer:IsA("GuiObject") and layer.Visible then
+			local actionButton = layer:QueryDescendants("#Buttons > #Action")[1]
+			local cashButton = layer:QueryDescendants("#Buttons > #Currency")[1]
+			local rebirthFrame = layer:FindFirstChild("Rebirth")
+			if cashButton and actionButton and rebirthFrame then
+				table.insert(sortPickaxes, {
+					Name = layer.Name,
+					Tier = layer.LayoutOrder,
+					Button = cashButton,
+					ActionFrame = actionButton,
+					RebirthFrame = rebirthFrame
+				})
+			end
+		end
+	end
+
+	table.sort(sortPickaxes, function(a, b)
+		return a.Tier < b.Tier
+	end)
+
+	for _, info in ipairs(sortPickaxes) do
+		table.insert(InfosData.Pickaxe, info)
+	end
+end
+
+if Interfaces.FoodScroll then
+	local sortFoods = {}
+
+	for _, layer in ipairs(Interfaces.FoodScroll:GetChildren()) do
+		if layer and layer.Parent and layer:IsA("GuiObject") and layer.Visible then
+			local button = layer:QueryDescendants("#Buttons > #Currency")[1]
+			local stock = layer:FindFirstChild("Stock")
+			local title = layer:QueryDescendants("#DisplayName > #DisplayLabel")[1]
+			if button and stock then
+				table.insert(sortFoods, {
+					Name = layer.Name,
+					Tier = layer.LayoutOrder,
+					Stock = stock,
+					Button = button
+				})
+			end
+		end
+	end
+
+	table.sort(sortFoods, function(a, b)
+		return a.Tier < b.Tier
+	end)
+
+	for _, info in ipairs(sortFoods) do
+		table.insert(InfosData.Food, info)
+	end
+end
+
+local function FirePrompt(prompt)
+	if fireproximityprompt then
+		fireproximityprompt(prompt, 0)
+	end
+end
+
+local function FireButton(button)
+	if firesignal then
+		firesignal(button.Activated)
+		firesignal(button.MouseButton1Click)
+	end
+end
+
+local function FireTouch(hitPart, targetPart)
+	if firetouchinterest then
+		firetouchinterest(hitPart, targetPart, 1)
+		task.wait()
+		firetouchinterest(hitPart, targetPart, 0)
+	end
+end
+
+local AnimalFolder = nil
+local Modules = {}
+
+pcall(function()
+	local animalDataModule = ReplicatedStorage.__DIRECTORY.Items
+	Modules.AnimalData = require(cloneref and cloneref(animalDataModule) or animalDataModule:Clone())
+end)
+
+if Modules.AnimalData then
+	for name, data in next, Modules.AnimalData do
+		if data.Display and ActivesData.Names[data.Display] == nil then
+			ActivesData.Names[data.Display] = false
+			table.insert(TypesData.Names, name)
+		end
+		if data.Rarity and ActivesData.Raritys[data.Rarity] == nil then
+			ActivesData.Raritys[data.Rarity] = false
+			table.insert(TypesData.Raritys, data.Rarity)
+		end
+	end
+end
+
+local Window = UI:CreateWindow({
+	Name = "Rescue Animals", 
+	Destroying = function()
+		for key, enabled in pairs(Enableds) do
+			Enableds[key] = false
+		end
+		Connections.CharacterAdded:Disconnect()
+	end
+})
+
+Interfaces.AnimalNameDropdown = Window:AddDropdown({
+	Text = "Animal Name",
+	Options = #TypesData.Names > 0 and TypesData.Names or {"No Animal Name"},
+	Option = nil,
+	Multi = true,
+	Callback = function(option)
+		for _, mode in ipairs(TypesData.Upgrade) do
+			ActivesData.Names[mode] = table.find(option, mode) ~= nil
+		end
+	end
+})
+
+Interfaces.AnimalRarityDropdown = Window:AddDropdown({
+	Text = "Animal Rarity",
+	Options = #TypesData.Raritys > 0 and TypesData.Raritys or {"No Animal Rarity"},
+	Option = nil,
+	Multi = true,
+	Callback = function(option)
+		for _, mode in ipairs(TypesData.Raritys) do
+			ActivesData.Raritys[mode] = table.find(option, mode) ~= nil
+		end
+	end
+})
+
+Interfaces.AnimalMutationDropdown = Window:AddDropdown({
+	Text = "Animal Mutation",
+	Options = #TypesData.Mutations > 0 and TypesData.Mutations or {"No Animal Mutation"},
+	Option = nil,
+	Multi = true,
+	Callback = function(option)
+		for _, mode in ipairs(TypesData.Mutations) do
+			ActivesData.Mutations[mode] = table.find(option, mode) ~= nil
+		end
+	end
+})
+
+Interfaces.AnimalNameDropdown.Visible = true
+Interfaces.AnimalMutationDropdown.Visible = true 
+Interfaces.LastAnimalDropdown = Interfaces.AnimalRarityDropdown
+
+Window:AddSelector({
+	Options = {"Animal Rarity", "Animal Name", "Animal Mutation"},
+	NoCap = true,
+	Callback = function(value)
+		if value == "Animal Rarity" then
+			Interfaces.AnimalDropdown = Interfaces.AnimalRarityDropdown
+		elseif value == "Animal Mutation" then
+			Interfaces.AnimalDropdown = Interfaces.AnimalMutationDropdown
+		elseif value == "Animal Name" then
+			Interfaces.AnimalDropdown = Interfaces.AnimalNameDropdown
+		end
+		if Interfaces.LastAnimalDropdown then
+			Interfaces.LastAnimalDropdown.Visible = false
+			Interfaces.LastAnimalDropdown = nil
+		end
+		if Interfaces.AnimalDropdown then
+			Interfaces.LastAnimalDropdown = Interfaces.AnimalDropdown
+			Interfaces.AnimalDropdown.Visible = true
+		end
+	end
+})
+
+Window:AddToggle({
+	Text = "Auto Rescue",
+	Value = false,
+	Callback = function(value)
+		Enableds.Rescue = value
+		if not Enableds.Rescue then return end
+		AnimalFolder = AnimalFolder or workspace.CASCHES.CLIENT_ITEMS
+		task.spawn(function()
+			while Enableds.Rescue do
+				for _, animal in ipairs(AnimalFolder:GetChildren()) do
+					if not Enableds.Rescue then break end
+					if animal and animal.Parent then 
+						local overheadGui = animal:QueryDescendants("#OverheadAttachment > #ItemInfo")[1]
+						if not overheadGui then continue end
+
+						local iceCube = animal:FindFirstChild("IceCube")
+						if not iceCube then continue end
+
+						local rarityLabel = overheadGui:FindFirstChild("Rarity")
+						local nameLabel = overheadGui:FindFirstChild("ItemName")
+						local mutationFrame = overheadGui:FindFirstChild("Mutations")
+
+						local access = false
+								
+						if mutationFrame then
+							for _, child in ipairs(mutationFrame:GetChildren()) do
+								if not animal.Parent then break end
+								if ActivesData.Mutations[child.Name] then
+								   access = true 
+								   break
+								end
+							end
+						end
+								
+					    if not animal.Parent then continue end
+								
+						local rarity, name = rarityLabel and rarityLabel.Text or "Unknown", nameLabel and nameLabel.Text or "Unknown"
+						if ActivesData.Raritys[rarity] == true or ActivesData.Names[name] == true or access == true then
+							local pickupPrompt = nil
+
+							for _, prompt in ipairs(animal:GetDescendants()) do
+								if prompt and prompt.Parent and prompt.Name == "PickupPrompt" and prompt:IsA("ProximityPrompt") then
+									pickupPrompt = prompt
+									break
+								end
+						    end
+
+							repeat
+								if Character.Parent and iceCube.Parent then
+								    Character:PivotTo(CFrame.new(Vector3.new(iceCube.PrimaryPart.Position.X, Character.PrimaryPart.Position.Y, iceCube.PrimaryPart.Position.Z)))
+								end
+								task.wait()
+								if pickupPrompt and pickupPrompt.Parent and pickupPrompt.Enabled then
+									FirePrompt(pickupPrompt)
+									task.wait(0.2)
+								end
+							until not (Enableds.Rescue and iceCube.Parent and animal.Parent)
+						end
+
+						task.wait(0.1)
+					end
+
+				end
+				task.wait(1)
+			end
+		end)
+	end
+})
+
+Interfaces.CashToggle = Window:AddToggle({
+	Text = "Collect Cash",
+	Value = false,
+	Callback = function(value)
+		Enableds.Cash = value
+		if not Enableds.Cash then return end
+		if not Packets.CollectCash then
+			Enableds.Cash = false
+			Interfaces.CashToggle:Replace(false)
+			return
+		end
+		task.spawn(function()
+			while Enableds.Cash do
+				Packets.CollectCash:InvokeServer()
+				task.wait(1)
+			end
+		end)
+	end
+})
+
+Interfaces.PlaceToggle = Window:AddToggle({
+	Text = "Place Best Animal",
+	Value = false,
+	Callback = function(value)
+		Enableds.Place = value
+		if not Enableds.Place then return end
+		if not Packets.PlaceBest then
+			Enableds.Place = false
+			Interfaces.PlaceToggle:Replace(false)
+			return
+		end
+		task.spawn(function()
+			while Enableds.Place do
+				Packets.PlaceBest:InvokeServer()
+				task.wait(3)
+			end
+		end)
+	end
+})
+
+Interfaces.RebirthToggle = Window:AddToggle({
+	Text = "Auto Rebirth",
+	Value = false,
+	Callback = function(value)
+		Enableds.Rebirth = value
+		if not Enableds.Rebirth then return end
+		Interfaces.RebirthFill = Interfaces.RebirthFill or PlayerGui:QueryDescendants("#Rebirth > #Frame > #Container > #Bar > #Fill")[1]
+		Interfaces.RebirthButton = Interfaces.RebirthButton or PlayerGui:QueryDescendants("#Rebirth > #Frame > #Container > #RebirthBtn")[1]
+		local success = false
+		if Packets.Rebirth then
+			success = true
+		elseif Interfaces.RebirthButton then
+			success = true
+		end
+		if not (Interfaces.RebirthFill and success) then
+			Enableds.Rebirth = false
+			Interfaces.RebirthToggle:Replace(false)
+			return
+		end
+		task.spawn(function()
+			while Enableds.Rebirth do
+				if Interfaces.RebirthFill.Size.X.Scale >= 1 then
+					if Packets.Rebirth then
+						Packets.Rebirth:InvokeServer()
+					else
+						FireButton(Interfaces.RebirthButton)
+					end
+				end
+				task.wait()
+			end
+		end)
+	end
+})
+
+Window:AddDropdown({
+	Text = "Upgrade Type",
+	Options = #TypesData.Upgrade > 0 and TypesData.Upgrade or {"No Upgrade Type"},
+	Option = nil,
+	Multi = true,
+	Visible = false,
+	Callback = function(option)
+		for _, mode in ipairs(TypesData.Upgrade) do
+			UpgradeActives[mode] = table.find(option, mode) ~= nil
+		end
+		UpgradeActives.AllEnabled = #option <= 0
+	end
+})
+
+Window:AddToggle({
+	Text = "Auto Upgrade",
+	Value = false,
+	Callback = function(value)
+		Enableds.Upgrade = value
+		if not Enableds.Upgrade then return end
+
+		task.spawn(function()
+			while Enableds.Upgrade do
+				if Interfaces.UpgradeScroll and Packets.Upgrade and (UpgradeActives["Upgrade"] or UpgradeActives.AllEnabled) then
+					for _, layer in ipairs(Interfaces.UpgradeScroll:GetChildren()) do
+						if not Enableds.Upgrade then break end
+						if layer and layer.Parent and layer:IsA("GuiObject") and layer.Visible and (UpgradeActives["Upgrade"] or UpgradeActives.AllEnabled) then
+							local key = layer.Name 
+							local info = InfosData.Upgrade[key]
+							if info == nil then
+								info = {
+									DisplayLabel = layer:QueryDescendants("#Information > #DisplayLabel")[1],
+									Button = layer:QueryDescendants("#Buttons > #Currency")[1]
+								}
+								InfosData.Upgrade[key] = info
+							end
+						end
+						task.wait()
+
+					end
+				end
+				task.wait(0.5)
+			end
+		end)
+
+		task.spawn(function()
+			while Enableds.Upgrade do
+				if UpgradeActives["Buy Pickaxe"] or UpgradeActives.AllEnabled then
+					for _, info in ipairs(InfosData.Pickaxe) do
+						if not Enableds.Upgrade then break end
+						if UpgradeActives["Buy Pickaxe"] or UpgradeActives.AllEnabled then
+							local rebirthFrame, actionFrame = info.RebirthFrame, info.ActionFrame
+							local button = info.Button
+							if button.Visible == true then
+								if rebirthFrame.Visible == true then continue end
+								if actionFrame.Visible == true then continue end
+								if Packets.PurchasePickaxe then
+									Packets.PurchasePickaxe:InvokeServer(info.Name)
+								else
+									FireButton(button)
+								end
+							end
+						end
+						task.wait()
+					end
+				end
+				task.wait(0.5)
+			end
+		end)
+
+		task.spawn(function()
+			while Enableds.Upgrade do
+				if UpgradeActives["Buy Food"] or UpgradeActives.AllEnabled then
+					for _, info in ipairs(InfosData.Food) do
+						if not Enableds.Upgrade then break end
+						if UpgradeActives["Buy Food"] or UpgradeActives.AllEnabled then
+							local text = string.gsub(info.Stock.Text:lower(), "stock:%s*", "")
+							if not text or text:sub(1,1) == "0" then continue end
+							FireButton(info.Button)
+						end
+						task.wait()
+					end
+				end
+				task.wait(0.5)
+			end
+		end)
+
+		task.spawn(function()
+			while Enableds.Upgrade do
+				if UpgradeActives["Animal"] or UpgradeActives.AllEnabled then
+					if Interfaces.AnimalScroll and Packets.UpgradeAnimal then
+						for _, layer in ipairs(Interfaces.AnimalScroll:GetChildren()) do
+							if not (Enableds.Upgrade) then break end
+							if layer and layer.Parent and layer:IsA("GuiObject") and layer.Visible and (UpgradeActives["Animal"] or UpgradeActives.AllEnabled) then
+								local key = layer.Name
+								local button = layer:QueryDescendants("#Buttons > #Upgrade")[1]
+								if button ~= nil then
+									if Packets.UpgradeAnimal then
+										Packets.UpgradeAnimal:InvokeServer(key)
+									else
+										FireButton(button)
+									end
+								end
+							end
+							task.wait()
+						end
+					end
+				end
+				task.wait(0.5)
+			end
+		end)
+	end
+})
+
+Interfaces.SellToggle = Window:AddToggle({
+	Text = "Auto Sell",
+	Value = false,
+	Visible = true,
+	Callback = function(value)
+		Enableds.Sell = value
+		if not Enableds.Sell then return end
+		if not Packets.Sell then
+			Enableds.Sell = false
+			Interfaces.SellToggle:Replace(false)
+			return
+		end
+		task.spawn(function()
+			while Enableds.Sell do
+				Packets.Sell:InvokeServer()
+				task.wait(1)
+			end
+		end)
+	end
+})
+
+Interfaces.CodeDropdown = Window:AddDropdown({
+	Text = "Code List",
+	Options = #TypesData.Code > 0 and TypesData.Code or {"No Code"},
+	Option = nil,
+	Multi = true,
+	Callback = function(option) end
+})
+
+Window:AddButton({
+	Text = "Redeem Code",
+	MethodType = "DebounceClick",
+	Callback = function(value)
+		if Packets.RedeemCode then
+			for _, code in ipairs(TypesData.Code) do
+				Packets.RedeemCode:InvokeServer(code)
+				task.wait(0.1)
+			end
+		end
+	end
+})
+
+Window:AddLabel({ Text = "YouTube: Crokyreo", TextColor3 = Color3.fromRGB(255, 255, 255) })
+Window:AddLabel({ Text = "YouTube: Tora IsMe", TextColor3 = Color3.fromRGB(255, 255, 255) })
+
+Services.GuiService:SetGameplayPausedNotificationEnabled(false)
