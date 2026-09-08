@@ -16,16 +16,18 @@ Connections.CharacterAdded = LocalPlayer.CharacterAdded:Connect(function(char)
 	Character = char
 end)
 
+local ServiceFolder = ReplicatedStorage:QueryDescendants("#Library > #Knit >> #Services")[1]
 local Packets = {
-	["RedeemCode"] = ReplicatedStorage:QueryDescendants("#Library > #Knit >> #Services > #CodeService > #RF > #TryRedeem")[1],
-	["Sell"] = ReplicatedStorage:QueryDescendants("#Library > #Knit >> #Services > #ItemService > #RF > #TrySell")[1],
-	["Rebirth"] = ReplicatedStorage:QueryDescendants("#Library > #Knit >> #Services > #RebirthService > #RF > #TryRebirth")[1],
-	["UpgradeAnimal"] = ReplicatedStorage:QueryDescendants("#Library > #Knit >> #Services > #SlotService > #RF > #TryUpgradeItem")[1],
-	["Upgrade"] = ReplicatedStorage:QueryDescendants("#Library > #Knit >> #Services > #UpgradeService > #RF > #TryUpgrade")[1],
-	["PurchaseBoost"] = ReplicatedStorage:QueryDescendants("#Library > #Knit >> #Services > #BoostService > #RF > #TryPurchase")[1],
-	["PlaceBest"] = ReplicatedStorage:QueryDescendants("#Library > #Knit >> #Services > #SlotService > #RF > #TryPlaceBest")[1],
-	["CollectCash"] = ReplicatedStorage:QueryDescendants("#Library > #Knit >> #Services > #SlotService > #RF > #TryCollectCurrency")[1],
-	["PurchasePickaxe"] = ReplicatedStorage:QueryDescendants("#Library > #Knit >> #Services > #PickaxeService > #RF > #TryPurchase")[1]
+	["RedeemCode"] =  ServiceFolder:QueryDescendants("#CodeService > #RF > #TryRedeem")[1],
+	["Sell"] = ServiceFolder:QueryDescendants("#ItemService > #RF > #TrySell")[1],
+	["Rebirth"] = ServiceFolder:QueryDescendants("#RebirthService > #RF > #TryRebirth")[1],
+	["UpgradeAnimal"] = ServiceFolder:QueryDescendants("#SlotService > #RF > #TryUpgradeItem")[1],
+	["Upgrade"] = ServiceFolder:QueryDescendants("#UpgradeService > #RF > #TryUpgrade")[1],
+	["PurchaseBoost"] = ServiceFolder:QueryDescendants("#BoostService > #RF > #TryPurchase")[1],
+	["PlaceBest"] = ServiceFolder:QueryDescendants("#SlotService > #RF > #TryPlaceBest")[1],
+	["CollectCash"] = ServiceFolder:QueryDescendants("#SlotService > #RF > #TryCollectCurrency")[1],
+	["PurchasePickaxe"] = ServiceFolder:QueryDescendants("#PickaxeService > #RF > #TryPurchase")[1],
+	["PickupAnimal"] = ServiceFolder:QueryDescendants("#SpawnerService > #RF > #TryPickup")[1]
 	-- Library.Knit.Knit.Services
 }
 
@@ -204,8 +206,8 @@ Interfaces.AnimalMutationDropdown = Window:AddDropdown({
 	end
 })
 
-Interfaces.AnimalNameDropdown.Visible = true
-Interfaces.AnimalMutationDropdown.Visible = true 
+Interfaces.AnimalNameDropdown.Visible = false
+Interfaces.AnimalMutationDropdown.Visible = false
 Interfaces.LastAnimalDropdown = Interfaces.AnimalRarityDropdown
 
 Window:AddSelector({
@@ -241,7 +243,8 @@ Window:AddToggle({
 			while Enableds.Rescue do
 				for _, animal in ipairs(AnimalFolder:GetChildren()) do
 					if not Enableds.Rescue then break end
-					if animal and animal.Parent then 
+					if animal and animal.Parent then
+						local key = animal.Name
 						local overheadGui = animal:QueryDescendants("#OverheadAttachment > #ItemInfo")[1]
 						if not overheadGui then continue end
 
@@ -282,11 +285,14 @@ Window:AddToggle({
 								    Character:PivotTo(CFrame.new(Vector3.new(iceCube.PrimaryPart.Position.X, Character.PrimaryPart.Position.Y, iceCube.PrimaryPart.Position.Z)))
 								end
 								task.wait()
-								if pickupPrompt and pickupPrompt.Parent and pickupPrompt.Enabled then
-									FirePrompt(pickupPrompt)
-									task.wait(0.2)
-								end
-							until not (Enableds.Rescue and iceCube.Parent and animal.Parent)
+							until not (Enableds.Rescue and iceCube.Parent)
+									
+							if Packets.PickupAnimal then
+                               Packets.PickupAnimal:InvokeServer("1",key)
+							elseif pickupPrompt then
+								FirePrompt(pickupPrompt)
+							end
+							task.wait(0.1)
 						end
 
 						task.wait(0.1)
