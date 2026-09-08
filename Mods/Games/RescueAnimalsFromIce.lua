@@ -487,6 +487,7 @@ Window:AddToggle({
 	end
 })
 
+--[[
 Interfaces.SellToggle = Window:AddToggle({
 	Text = "Auto Sell",
 	Value = false,
@@ -507,6 +508,7 @@ Interfaces.SellToggle = Window:AddToggle({
 		end)
 	end
 })
+]]
 
 Interfaces.CodeDropdown = Window:AddDropdown({
 	Text = "Code List",
